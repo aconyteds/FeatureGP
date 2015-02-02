@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/OverviewMap/setting/nls/strings":{visible:"\u663e\u793a\u9ed8\u8ba4\u7684\u603b\u89c8\u56fe",minWidth:"\u6700\u5c0f\u5bbd\u5ea6",minHeight:"\u6700\u5c0f\u9ad8\u5ea6",maxWidth:"\u6700\u5927\u5bbd\u5ea6",maxHeight:"\u6700\u5927\u9ad8\u5ea6",minText:"\u6700\u5c0f\u503c",maxText:"\u6700\u5927\u503c",_localized:{}}});

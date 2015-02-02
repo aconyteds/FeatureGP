@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/OverviewMap/setting/nls/strings":{visible:"P\u0113c noklus\u0113juma r\u0101d\u012bt p\u0101rskata karti",minWidth:"Min. platums",minHeight:"Min. augstums",maxWidth:"Maks. platums",maxHeight:"Maks. augstums",minText:"Minimums",maxText:"maksimums",_localized:{}}});

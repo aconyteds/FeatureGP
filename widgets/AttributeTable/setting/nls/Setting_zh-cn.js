@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/AttributeTable/setting/nls/strings":{label:"\u56fe\u5c42",show:"\u663e\u793a",actions:"\u914d\u7f6e\u56fe\u5c42\u5b57\u6bb5",field:"\u5b57\u6bb5",alias:"\u522b\u540d",visible:"\u53ef\u89c1",linkField:"\u94fe\u63a5\u5b57\u6bb5",noLayers:"\u6ca1\u6709\u53ef\u7528\u7684\u8981\u7d20\u56fe\u5c42",back:"\u8fd4\u56de",exportCSV:"\u5141\u8bb8\u5bfc\u51fa\u4e3a CSV",restore:"\u6062\u590d\u81f3\u9ed8\u8ba4\u503c",ok:"\u786e\u5b9a",result:"\u5df2\u6210\u529f\u4fdd\u5b58",warning:"\u9009\u4e2d\u4ee5\u5c06\u6b64\u56fe\u5c42\u9996\u5148\u663e\u793a\u5728\u8868\u4e2d\u3002",
+fieldName:"\u540d\u79f0",fieldAlias:"\u522b\u540d",fieldVisibility:"\u53ef\u89c1\u6027",fieldActions:"\u64cd\u4f5c",_localized:{}}});

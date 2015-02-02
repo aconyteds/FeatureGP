@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/OverviewMap/setting/nls/strings":{visible:"Mostrar mapa de vista general de manera predeterminada",minWidth:"Ancho m\u00edn.",minHeight:"Alto m\u00edn.",maxWidth:"Ancho m\u00e1x.",maxHeight:"Alto m\u00e1x.",minText:"M\u00ednimo",maxText:"m\u00e1ximo",_localized:{}}});

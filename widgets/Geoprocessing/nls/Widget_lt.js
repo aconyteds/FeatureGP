@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/Geoprocessing/nls/strings":{_widgetLabel:"Geoduomen\u0173 apdorojimas",execute:"Vykdyti",help:"Pagalba",input:"\u012evestis",output:"I\u0161vestis",executing:"Vykdoma",requiredInfo:"b\u016btina.",drawnOnMap:"Rezultatas nupie\u0161tas \u017eem\u0117lapyje.",clear:"Valyti",error:"Klaida",_localized:{}}});

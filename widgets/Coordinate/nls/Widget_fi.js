@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/Coordinate/nls/strings":{_widgetLabel:"Koordinaatti",hintMessage:"Nouda koordinaatit napsauttamalla karttaa",defaultLabel:"Oletus",realtimeLabel:"Nouda koordinaatit siirt\u00e4m\u00e4ll\u00e4 hiirt\u00e4",computing:"Lasketaan...",latitudeLabel:"Leveysaste",longitudeLabel:"Pituusaste",loading:"ladataan ...",Default:"Oletus",Inches:"tuumaa",Foot:"jalkaa",Yards:"Jaardia",Miles:"Mailia",Nautical_Miles:"Meripeninkulmaa",Millimeters:"millimetri\u00e4",Centimeters:"senttimetri\u00e4",Meter:"metri\u00e4",
+Kilometers:"Kilometri\u00e4",Decimeters:"desimetri\u00e4",Decimal_Degrees:"desimaaliastetta",Degree_Minutes_Seconds:"astetta, minuuttia, sekuntia",MGRS:"MGRS",USNG:"USNG",_localized:{}}});

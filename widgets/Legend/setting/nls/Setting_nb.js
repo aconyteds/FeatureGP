@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/Legend/setting/nls/strings":{left:"VENSTRE",right:"H\u00d8YRE",arrangement:"Plassering",autoUpdate:"Automatisk oppdatering",respectCurrentMapScale:"Respekter gjeldende kartm\u00e5lestokk",_localized:{}}});

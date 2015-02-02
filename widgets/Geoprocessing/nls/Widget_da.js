@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/Geoprocessing/nls/strings":{_widgetLabel:"Geoprocessering",execute:"Udf\u00f8r",help:"Hj\u00e6lp",input:"Input",output:"Output",executing:"Udf\u00f8rer",requiredInfo:"er obligatorisk.",drawnOnMap:"Resultatet er tegnet p\u00e5 kortet.",clear:"Ryd",error:"Fejl",_localized:{}}});

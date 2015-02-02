@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/Coordinate/nls/strings":{_widgetLabel:"Koordinat\u0117",hintMessage:"Spustel\u0117kite \u017eem\u0117lap\u012f, kad gautum\u0117te koordinates",defaultLabel:"Numatytasis",realtimeLabel:"Nor\u0117dami gauti koordinates, perstumkite pel\u0119",computing:"Skai\u010diuojama...",latitudeLabel:"Platuma",longitudeLabel:"Ilguma",loading:"\u012fkeliama...",Default:"Numatytasis",Inches:"Coliai",Foot:"P\u0117dos",Yards:"Jardai",Miles:"Mylios",Nautical_Miles:"J\u016brmyl\u0117s",Millimeters:"Milimetrai",
+Centimeters:"Centimetrai",Meter:"Metras",Kilometers:"Kilometrai",Decimeters:"Decimetrai",Decimal_Degrees:"De\u0161imtainiai laipsniai",Degree_Minutes_Seconds:"Laipsniai Minut\u0117s Sekund\u0117s",MGRS:"MGRS",USNG:"USNG",_localized:{}}});

@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/AttributeTable/setting/nls/strings":{label:"Katman",show:"G\u00f6ster",actions:"Katman Alanlar\u0131n\u0131 Yap\u0131land\u0131r",field:"Alan",alias:"Takma Ad",visible:"G\u00f6r\u00fcn\u00fcr",linkField:"Ba\u011flant\u0131 Alan\u0131",noLayers:"Detay katman\u0131 mevcut de\u011fil",back:"Geri",exportCSV:"CSV'ye Aktarmaya \u0130zin Ver",restore:"Varsay\u0131lan de\u011fere geri y\u00fckle",ok:"Tamam",result:"Ba\u015far\u0131yla kaydedildi",warning:"Bu katman\u0131 tabloda ilk \u00f6nce g\u00f6stermek i\u00e7in i\u015faretleyin.",
+fieldName:"Ad",fieldAlias:"Takma Ad",fieldVisibility:"G\u00f6r\u00fcn\u00fcrl\u00fck",fieldActions:"\u0130\u015flemler",_localized:{}}});

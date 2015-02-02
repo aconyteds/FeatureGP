@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/LayerList/nls/strings":{_widgetLabel:"Lista de capas",titleBasemap:"Mapas base",titleLayers:"Capas operativas",labelLayer:"Nombre de capa",itemZoomTo:"Acercar a",itemTransparency:"Transparencia",itemTransparent:"Transparente",itemOpaque:"Opaco",itemMoveUp:"Mover hacia arriba",itemMoveDown:"Mover hacia abajo",itemDesc:"Descripci\u00f3n",itemDownload:"Descargar",itemToAttributeTable:"Abrir tabla de atributos",_localized:{}}});

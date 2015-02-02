@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/OverviewMap/setting/nls/strings":{visible:"\u00dcbersichtskarte standardm\u00e4\u00dfig anzeigen",minWidth:"Minimale Breite",minHeight:"Minimale H\u00f6he",maxWidth:"Maximale Breite",maxHeight:"Maximale H\u00f6he",minText:"Minimum",maxText:"Maximum",_localized:{}}});

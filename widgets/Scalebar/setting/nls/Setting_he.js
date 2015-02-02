@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/Scalebar/setting/nls/strings":{unit:"\u05d9\u05d7\u05d9\u05d3\u05d4",style:"\u05e1\u05d2\u05e0\u05d5\u05df",dual:"\u05db\u05e4\u05d5\u05dc",english:"\u05d0\u05e0\u05d2\u05dc\u05d9\u05ea",metric:"\u05de\u05d8\u05e8\u05d9",ruler:"\u05e7\u05d5\u05d1\u05e2",line:"\u05e9\u05d5\u05e8\u05d4",_localized:{}}});

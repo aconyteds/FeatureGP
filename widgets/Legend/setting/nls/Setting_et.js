@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/Legend/setting/nls/strings":{left:"VASAK",right:"PAREM",arrangement:"Korraldamine",autoUpdate:"Uuenda automaatselt",respectCurrentMapScale:"S\u00e4ilita praegune kaardi m\u00f5\u00f5tkava",_localized:{}}});

@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/Geoprocessing/nls/strings":{_widgetLabel:"Geobearbetning",execute:"Utf\u00f6r",help:"Hj\u00e4lp",input:"Indata",output:"Utdata",executing:"K\u00f6r",requiredInfo:"\u00e4r obligatoriskt.",drawnOnMap:"Resultatet ritas p\u00e5 kartan.",clear:"Rensa",error:"Fel",_localized:{}}});

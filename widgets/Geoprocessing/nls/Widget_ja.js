@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/Geoprocessing/nls/strings":{_widgetLabel:"\u30b8\u30aa\u30d7\u30ed\u30bb\u30b7\u30f3\u30b0",execute:"\u5b9f\u884c",help:"\u30d8\u30eb\u30d7",input:"\u5165\u529b",output:"\u51fa\u529b",executing:"\u5b9f\u884c\u4e2d",requiredInfo:"\u306f\u5fc5\u9808\u3067\u3059\u3002",drawnOnMap:"\u7d50\u679c\u306f\u30de\u30c3\u30d7\u4e0a\u306b\u63cf\u753b\u3055\u308c\u307e\u3059\u3002",clear:"\u6d88\u53bb",error:"\u30a8\u30e9\u30fc",_localized:{}}});

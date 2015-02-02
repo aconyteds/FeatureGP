@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/OverviewMap/setting/nls/strings":{visible:"N\u00e4yt\u00e4 oletusarvoisesti yleiskatsauskartta",minWidth:"Minimileveys",minHeight:"Minimikorkeus",maxWidth:"Maksimileveys",maxHeight:"Maksimikorkeus",minText:"Minimi",maxText:"Maksimi",_localized:{}}});

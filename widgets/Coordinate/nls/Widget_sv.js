@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/Coordinate/nls/strings":{_widgetLabel:"Koordinat",hintMessage:"Klicka p\u00e5 kartan f\u00f6r att h\u00e4mta koordinater",defaultLabel:"Standard",realtimeLabel:"Flytta musen f\u00f6r att h\u00e4mta koordinater",computing:"Ber\u00e4knar ...",latitudeLabel:"Latitud",longitudeLabel:"Longitud",loading:"l\u00e4ser in...",Default:"Standard",Inches:"Tum",Foot:"Fot",Yards:"Yard",Miles:"Engelska mil",Nautical_Miles:"Nautiska mil",Millimeters:"Millimeter",Centimeters:"Centimeter",Meter:"Meter",
+Kilometers:"Kilometer",Decimeters:"Decimeter",Decimal_Degrees:"Decimalgrader",Degree_Minutes_Seconds:"Grad minuter sekunder",MGRS:"MGRS",USNG:"USNG",_localized:{}}});

@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/OverviewMap/setting/nls/strings":{visible:"Afficher la vue g\u00e9n\u00e9rale par d\u00e9faut",minWidth:"Largeur min.",minHeight:"Hauteur min.",maxWidth:"Largeur max.",maxHeight:"Hauteur max.",minText:"Minimum",maxText:"Maximum",_localized:{}}});

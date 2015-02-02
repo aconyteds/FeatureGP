@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/OverviewMap/setting/nls/strings":{visible:"Vis oversigtskort som standard",minWidth:"Minmumbredde",minHeight:"Minimumh\u00f8jde",maxWidth:"Maksimumbredde",maxHeight:"Maksimumh\u00f8jde",minText:"Minimum",maxText:"maksimum",_localized:{}}});

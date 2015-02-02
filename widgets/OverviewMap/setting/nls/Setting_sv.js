@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/OverviewMap/setting/nls/strings":{visible:"Visa \u00f6versiktskarta som standard",minWidth:"Minsta bredd",minHeight:"Minsta h\u00f6jd",maxWidth:"Max bredd",maxHeight:"Max h\u00f6jd",minText:"Minimum",maxText:"max",_localized:{}}});

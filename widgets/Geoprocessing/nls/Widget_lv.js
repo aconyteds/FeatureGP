@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/Geoprocessing/nls/strings":{_widgetLabel:"\u0122eodatu apstr\u0101de",execute:"Izpild\u012bt",help:"Pal\u012bdz\u012bba",input:"Ievade",output:"Izvade",executing:"Izpilde",requiredInfo:"ir oblig\u0101ts.",drawnOnMap:"Rezult\u0101ts tiek z\u012bm\u0113ts kart\u0113.",clear:"Not\u012br\u012bt",error:"K\u013c\u016bda",_localized:{}}});

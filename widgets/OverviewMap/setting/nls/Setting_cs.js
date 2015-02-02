@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/OverviewMap/setting/nls/strings":{visible:"Zobrazovat mapu p\u0159ehledu jako v\u00fdchoz\u00ed",minWidth:"Minim\u00e1ln\u00ed \u0161\u00ed\u0159ka",minHeight:"Minim\u00e1ln\u00ed v\u00fd\u0161ka",maxWidth:"Maxim\u00e1ln\u00ed \u0161\u00ed\u0159ka",maxHeight:"Maxim\u00e1ln\u00ed v\u00fd\u0161ka",minText:"Minimum",maxText:"Maximum",_localized:{}}});

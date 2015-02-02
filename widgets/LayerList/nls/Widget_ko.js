@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/LayerList/nls/strings":{_widgetLabel:"\ub808\uc774\uc5b4 \ubaa9\ub85d",titleBasemap:"\ubca0\uc774\uc2a4\ub9f5",titleLayers:"\uc6b4\uc601 \ub808\uc774\uc5b4",labelLayer:"\ub808\uc774\uc5b4 \uc774\ub984",itemZoomTo:"\ud655\ub300",itemTransparency:"\ud22c\uba85\ub3c4",itemTransparent:"\ud22c\uba85",itemOpaque:"\ubd88\ud22c\uba85",itemMoveUp:"\uc704\ub85c \uc774\ub3d9",itemMoveDown:"\uc544\ub798\ub85c \uc774\ub3d9",itemDesc:"\uc124\uba85",itemDownload:"\ub2e4\uc6b4\ub85c\ub4dc",itemToAttributeTable:"\uc18d\uc131 \ud14c\uc774\ube14 \uc5f4\uae30",
+_localized:{}}});

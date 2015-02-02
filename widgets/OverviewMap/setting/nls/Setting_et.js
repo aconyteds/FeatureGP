@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/OverviewMap/setting/nls/strings":{visible:"Kuva \u00fclevaatekaart vaikimisi",minWidth:"Min laius",minHeight:"Min k\u00f5rgus",maxWidth:"Max laius",maxHeight:"Max k\u00f5rgus",minText:"Miinimum",maxText:"Maksimum",_localized:{}}});

@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/Coordinate/nls/strings":{_widgetLabel:"Coordonn\u00e9es",hintMessage:"Cliquez sur la carte pour obtenir les coordonn\u00e9es",defaultLabel:"Par d\u00e9faut",realtimeLabel:"D\u00e9placez la souris pour obtenir les coordonn\u00e9es",computing:"Calcul...",latitudeLabel:"Latitude",longitudeLabel:"Longitude",loading:"chargement...",Default:"Par d\u00e9faut",Inches:"Pouces",Foot:"Pieds",Yards:"Yards",Miles:"Miles",Nautical_Miles:"Milles nautiques",Millimeters:"Millim\u00e8tres",Centimeters:"Centim\u00e8tres",
+Meter:"M\u00e8tres",Kilometers:"Kilom\u00e8tres",Decimeters:"D\u00e9cim\u00e8tres",Decimal_Degrees:"Degr\u00e9s d\u00e9cimaux",Degree_Minutes_Seconds:"Degr\u00e9 Minutes Secondes",MGRS:"MGRS",USNG:"USNG",_localized:{}}});

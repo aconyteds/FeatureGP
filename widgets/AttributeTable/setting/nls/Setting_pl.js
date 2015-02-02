@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/AttributeTable/setting/nls/strings":{label:"Warstwa",show:"Poka\u017c",actions:"Skonfiguruj pola warstwy",field:"Pole",alias:"Alias",visible:"Widoczne",linkField:"Pole \u0142\u0105cza",noLayers:"Brak dost\u0119pnych warstw obiekt\u00f3w",back:"Wstecz",exportCSV:"Zezwalaj na eksport do pliku CSV",restore:"Przywr\u00f3\u0107 warto\u015b\u0107 domy\u015bln\u0105",ok:"OK",result:"Zapisano pomy\u015blnie",warning:"Zaznacz, aby warstwa by\u0142a wy\u015bwietlana w tabeli jako pierwsza.",
+fieldName:"Nazwa",fieldAlias:"Alias",fieldVisibility:"Widoczno\u015b\u0107",fieldActions:"Operacje",_localized:{}}});

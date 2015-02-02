@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/AttributeTable/setting/nls/strings":{label:"Camada",show:"Mostrar",actions:"Configurar Campos da Camada",field:"Campo",alias:"Nome Alternativo",visible:"Vis\u00edvel",linkField:"LinkField",noLayers:"Sem camadas de fei\u00e7\u00e3o dispon\u00edveis",back:"Voltar",exportCSV:"Permitir exporta\u00e7\u00e3o para CSV",restore:"Restaurar para valor padr\u00e3o",ok:"OK",result:"Salvo com sucesso",warning:"Marque para mostrar esta camada primeiramente na tabela.",fieldName:"Nome",fieldAlias:"Nome Alternativo",
+fieldVisibility:"Visibilidade",fieldActions:"A\u00e7\u00f5es",_localized:{}}});

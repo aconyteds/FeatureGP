@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/Geoprocessing/nls/strings":{_widgetLabel:"\uc9c0\uc624\ud504\ub85c\uc138\uc2f1",execute:"\uc2e4\ud589",help:"\ub3c4\uc6c0\ub9d0",input:"\uc785\ub825",output:"\ucd9c\ub825",executing:"\uc2e4\ud589",requiredInfo:"\uc774(\uac00) \ud544\uc694\ud569\ub2c8\ub2e4.",drawnOnMap:"\uacb0\uacfc\uac00 \ub9f5\uc5d0 \uadf8\ub824\uc9d1\ub2c8\ub2e4.",clear:"\uc9c0\uc6b0\uae30",error:"\uc624\ub958",_localized:{}}});

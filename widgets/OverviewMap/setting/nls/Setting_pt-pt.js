@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/OverviewMap/setting/nls/strings":{visible:"Exibir mapa de vista geral por defeito",minWidth:"Largura M\u00ednima",minHeight:"Altura M\u00ednima",maxWidth:"Largura M\u00e1xima",maxHeight:"Altura M\u00e1xima",minText:"M\u00ednimo",maxText:"m\u00e1ximo",_localized:{}}});

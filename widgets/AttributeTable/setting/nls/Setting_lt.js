@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/AttributeTable/setting/nls/strings":{label:"Sluoksnis",show:"Rodyti",actions:"Konfig\u016bruoti sluoksnio laukus",field:"Laukas",alias:"Pseudonimas",visible:"Matoma",linkField:"Nuorodos laukas",noLayers:"Element\u0173 sluoksni\u0173 n\u0117ra",back:"Atgal",exportCSV:"Leisti eksportuoti \u012f CSV",restore:"Atkurti numatyt\u0105j\u0105 reik\u0161m\u0119",ok:"Gerai",result:"I\u0161saugota s\u0117kmingai",warning:"Pa\u017eym\u0117kite, kad \u0161is sluoksnis lentel\u0117je b\u016bt\u0173 rodomas pirmiausia.",
+fieldName:"Pavadinimas",fieldAlias:"Pseudonimas",fieldVisibility:"Matomumas",fieldActions:"Veiksmai",_localized:{}}});

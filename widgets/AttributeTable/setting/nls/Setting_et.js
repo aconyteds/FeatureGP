@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/AttributeTable/setting/nls/strings":{label:"Kiht",show:"N\u00e4ita",actions:"Kihi v\u00e4ljade seadistamine",field:"V\u00e4li",alias:"Alias",visible:"N\u00e4htav",linkField:"Lingi v\u00e4li",noLayers:"\u00dckski objektikiht ei ole saadaval",back:"Tagasi",exportCSV:"Luba eksportimine CSV faili",restore:"Taasta vaikev\u00e4\u00e4rtus",ok:"OK",result:"Salvestamine \u00f5nnestus",warning:"Proovige kuvada seda kihti k\u00f5igepealt tabelis.",fieldName:"Nimi",fieldAlias:"Alias",fieldVisibility:"N\u00e4htavus",
+fieldActions:"Tegevused",_localized:{}}});

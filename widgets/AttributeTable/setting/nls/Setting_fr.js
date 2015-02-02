@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/AttributeTable/setting/nls/strings":{label:"Couche",show:"Afficher",actions:"Configurer les champs de couche",field:"Champ",alias:"Alias",visible:"Visible",linkField:"Champ de lien",noLayers:"Aucune couche d\u2019entit\u00e9s disponible",back:"Retour",exportCSV:"Autoriser l\u2019exportation au format CSV",restore:"R\u00e9tablir la valeur par d\u00e9faut",ok:"OK",result:"Enregistrement r\u00e9ussi",warning:"S\u00e9lectionnez pour afficher cette couche en premier dans la table.",fieldName:"Nom",
+fieldAlias:"Alias",fieldVisibility:"Visibilit\u00e9",fieldActions:"Actions",_localized:{}}});

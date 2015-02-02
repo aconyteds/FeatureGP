@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/AttributeTable/setting/nls/strings":{label:"Strat tematic",show:"Afi\u015fare",actions:"Configurare c\u00e2mpuri strat tematic",field:"C\u00e2mp",alias:"Pseudonim",visible:"Vizibil",linkField:"C\u00e2mp link",noLayers:"Nu exist\u0103 niciun strat tematic de obiecte spa\u0163iale disponibil",back:"\u00cenapoi",exportCSV:"Permite\u0163i exportul \u00een CSV",restore:"Restabilire valoare implicit\u0103",ok:"OK",result:"Salvare reu\u015fit\u0103",warning:"Bifa\u0163i pentru a afi\u015fa acest strat tematic primul \u00een tabel.",
+fieldName:"Nume",fieldAlias:"Pseudonim",fieldVisibility:"Vizibilitate",fieldActions:"Ac\u0163iuni",_localized:{}}});

@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/AttributeTable/setting/nls/strings":{label:"Lag",show:"Vis",actions:"Konfigur\u00e9r lagfelter",field:"Felt",alias:"Alias",visible:"Synlig",linkField:"LinkFelt",noLayers:"Der er ingen tilg\u00e6ngelige objektlag",back:"Tilbage",exportCSV:"Tillad eksport til CSV",restore:"Gendan standardv\u00e6rdien",ok:"OK",result:"Gemt",warning:"Mark\u00e9r for at vise dette lag f\u00f8rst i tabellen.",fieldName:"Navn",fieldAlias:"Alias",fieldVisibility:"Synlighed",fieldActions:"Handlinger",_localized:{}}});

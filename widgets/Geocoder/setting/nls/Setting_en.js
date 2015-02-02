@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/Geocoder/setting/nls/strings":{placeholder:"Placeholder Text",url:"Geocoder URL",name:"Geocoder Name",example:"Example",singleLineFieldName:"SingleLineFieldName",portalConnectionError:"Can not get the configurations of geocoder from portal",actions:"Actions",warning:"Incorrect Service",instruction:"Establish the geocoders that will be used in this widget. Click Add Geocoder to reference a URL, specify a user friendly name, and set other properties. You can also reorder, configure, or delete your geocoders below.",
+add:"Add Geocoder",edit:"Edit Geocoder",ok:"OK",cancel:"Cancel",geocoderNamePlaceHolder:"My Geocoder",geocodePlaceHolder:"Find address or place",REPEATING_ERROR:"The following fields are repeated: ",_localized:{}}});

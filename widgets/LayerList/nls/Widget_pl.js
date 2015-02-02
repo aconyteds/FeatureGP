@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/LayerList/nls/strings":{_widgetLabel:"Lista warstw",titleBasemap:"Mapy bazowe",titleLayers:"Warstwy operacyjne",labelLayer:"Nazwa warstwy tematycznej",itemZoomTo:"Powi\u0119ksz do",itemTransparency:"Przezroczysto\u015b\u0107",itemTransparent:"Przezroczysty",itemOpaque:"Nieprzezroczysty",itemMoveUp:"Przesu\u0144 w g\u00f3r\u0119",itemMoveDown:"Przesu\u0144 w d\u00f3\u0142",itemDesc:"Opis",itemDownload:"Pobierz",itemToAttributeTable:"Otw\u00f3rz tabel\u0119 atrybut\u00f3w",_localized:{}}});

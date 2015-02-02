@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/AttributeTable/setting/nls/strings":{label:"Lag",show:"Vis",actions:"Konfigurer lagfelter",field:"Felt",alias:"Alias",visible:"Synlig",linkField:"LinkField",noLayers:"Ingen geoobjektlag tilgjengelig",back:"Bak",exportCSV:"Tillat eksport til CSV",restore:"Gjenopprett til standardverdi",ok:"OK",result:"Lagring vellykket",warning:"Kryss av for \u00e5 vise dette laget i tabellen f\u00f8rst.",fieldName:"Navn",fieldAlias:"Alias",fieldVisibility:"Synlighet",fieldActions:"Handlinger",_localized:{}}});

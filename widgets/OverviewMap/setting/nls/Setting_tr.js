@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/OverviewMap/setting/nls/strings":{visible:"maksimize edici",minWidth:"Min Geni\u015flik",minHeight:"Min Y\u00fckseklik",maxWidth:"Maks Geni\u015flik",maxHeight:"Maks Y\u00fckseklik",minText:"Minimum",maxText:"maksimum",_localized:{}}});

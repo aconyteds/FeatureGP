@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/AttributeTable/setting/nls/strings":{label:"Sl\u0101nis",show:"Par\u0101d\u012bt",actions:"Konfigur\u0113t sl\u0101\u0146a laukus",field:"Lauks",alias:"Aizst\u0101jv\u0101rds",visible:"Redzams",linkField:"Saites lauks",noLayers:"Nav pieejams neviens elementu sl\u0101nis",back:"Atpaka\u013c",exportCSV:"At\u013caut eksport\u0113t uz CSV",restore:"Atjaunot uz noklus\u0113juma v\u0113rt\u012bbu",ok:"Labi",result:"Saglab\u0101\u0161ana izdev\u0101s",warning:"Atz\u012bm\u0113jiet, lai r\u0101d\u012btu \u0161o sl\u0101ni tabul\u0101 vispirms.",
+fieldName:"Nosaukums",fieldAlias:"Aizst\u0101jv\u0101rds",fieldVisibility:"Redzam\u012bba",fieldActions:"Darb\u012bbas",_localized:{}}});

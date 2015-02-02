@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/Scalebar/setting/nls/strings":{unit:"Vienetai",style:"Stilius",dual:"dvigubas",english:"angl\u0173 k.",metric:"metriniai",ruler:"liniuot\u0117",line:"linija",_localized:{}}});

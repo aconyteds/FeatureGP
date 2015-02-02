@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/AttributeTable/setting/nls/strings":{label:"Layer",show:"Show",actions:"Configure Layer Fields",field:"Field",alias:"Alias",visible:"Visible",linkField:"Link Field",noLayers:"No feature layers available",back:"Back",exportCSV:"Allow exporting to CSV",restore:"Restore to default value",ok:"OK",result:"Saved successfully",warning:"Check to show this layer in table first most.",fieldName:"Name",fieldAlias:"Alias",fieldVisibility:"Visibility",fieldActions:"Actions",_localized:{}}});

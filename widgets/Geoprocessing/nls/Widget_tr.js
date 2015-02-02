@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/Geoprocessing/nls/strings":{_widgetLabel:"Co\u011frafi \u0130\u015flemler",execute:"\u00c7al\u0131\u015ft\u0131r",help:"Yard\u0131m",input:"Girdi",output:"\u00c7\u0131kt\u0131",executing:"\u00c7al\u0131\u015ft\u0131r\u0131l\u0131yor",requiredInfo:"gereklidir.",drawnOnMap:"Sonu\u00e7 haritada \u00e7izilidir.",clear:"Temizle",error:"Hata",_localized:{}}});

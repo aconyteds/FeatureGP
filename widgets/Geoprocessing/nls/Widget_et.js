@@ -1,0 +1,2 @@
+//>>built
+define({"widgets/Geoprocessing/nls/strings":{_widgetLabel:"Geot\u00f6\u00f6tlus",execute:"Teosta",help:"Abi",input:"Sisend",output:"V\u00e4ljund",executing:"Teostamine",requiredInfo:"on n\u00f5utav.",drawnOnMap:"Tulemus joonistatakse kaardile.",clear:"Puhasta",error:"Viga",_localized:{}}});

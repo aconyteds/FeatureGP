@@ -1,0 +1,3 @@
+//>>built
+define({"widgets/Coordinate/nls/strings":{_widgetLabel:"Koordinat",hintMessage:"Koordinatlar\u0131 almak i\u00e7in haritaya t\u0131kla",defaultLabel:"Varsay\u0131lan",realtimeLabel:"Koordinatlar\u0131 almak i\u00e7in fareyi hareket ettirin",computing:"Hesapl\u0131yor...",latitudeLabel:"Enlem",longitudeLabel:"Boylam",loading:"y\u00fckleniyor...",Default:"Varsay\u0131lan",Inches:"\u0130n\u00e7",Foot:"Fit",Yards:"Yarda",Miles:"Mil",Nautical_Miles:"Deniz Mili",Millimeters:"Milimetre",Centimeters:"Santimetre",
+Meter:"Metre",Kilometers:"Kilometre",Decimeters:"Desimetre",Decimal_Degrees:"Ondal\u0131k Derece",Degree_Minutes_Seconds:"Derece Dakika Saniye",MGRS:"MGRS",USNG:"USNG",_localized:{}}});
