@@ -1,1 +1,2091 @@
-{"theme":{"name":"FoldableTheme","styles":["black","cyan","green","default"]},"portalUrl":"https://gleneagle.esri.com/portal/","appId":"","title":"Feature Geoprocessing Demo","subtitle":"","logo":"images/app-logo.png","geometryService":"https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer","links":[],"widgetOnScreen":{"panel":{"uri":"themes/FoldableTheme/panels/TitlePanel/Panel","positionRelativeTo":"map"},"widgets":[{"uri":"themes/FoldableTheme/widgets/HeaderController/Widget","positionRelativeTo":"browser","position":{"left":0,"top":0,"right":0,"height":40},"id":"themes/FoldableTheme/widgets/HeaderController/Widget_1","name":"HeaderController","isThemeWidget":true,"label":"Header Controller"},{"uri":"widgets/Scalebar/Widget","position":{"left":25,"bottom":25},"id":"widgets/Scalebar/Widget_2","positionRelativeTo":"map","name":"Scalebar","label":"Scalebar"},{"uri":"widgets/Geocoder/Widget","position":{"left":45,"top":5},"id":"widgets/Geocoder/Widget_3","positionRelativeTo":"map","name":"Geocoder","label":"Geocoder"},{"uri":"widgets/Coordinate/Widget","position":{"left":200,"bottom":20},"id":"widgets/Coordinate/Widget_4","positionRelativeTo":"map","name":"Coordinate","label":"Coordinate"},{"position":{"left":55,"bottom":55,"width":400,"height":410},"placeholderIndex":1,"id":"_5","positionRelativeTo":"map","name":"Geoprocessing","label":"Geoprocessing","uri":"widgets/Geoprocessing/Widget","config":{"name":"Viewshed","displayName":"Viewshed","description":"Calculates the viewshed of a point given a user defined location and viewing distance.","category":"","helpUrl":"http://sampleserver6.arcgisonline.com/arcgis/rest/directories/arcgisoutput/Elevation/ESRI_Elevation_World_GPServer/Elevation_ESRI_Elevation_World/Viewshed.htm","taskUrl":"http://sampleserver6.arcgisonline.com/ArcGIS/rest/services/Elevation/ESRI_Elevation_World/GPServer/Viewshed","isSynchronous":true,"inputParams":[{"name":"Input_Observation_Point","dataType":"GPFeatureRecordSetLayer","description":"The input location from which the viewshed should be calculated.","defaultValue":{"displayFieldName":"","geometryType":"esriGeometryPoint","spatialReference":{"wkid":54003,"latestWkid":54003},"fields":[{"name":"OBJECTID","type":"esriFieldTypeOID","alias":"OBJECTID"},{"name":"OffsetA","type":"esriFieldTypeSmallInteger","alias":"OffsetA"}],"features":[],"exceededTransferLimit":false},"category":"","label":"Input_Observation_Point","visible":true,"required":true,"featureSetMode":"layers","tooltip":"Input_Observation_Point","symbol":{"color":[0,0,128,128],"size":18,"angle":0,"xoffset":0,"yoffset":0,"type":"esriSMS","style":"esriSMSCircle","outline":{"color":[0,0,128,255],"width":0.75,"type":"esriSLS","style":"esriSLSSolid"}}},{"name":"Viewshed_Distance","dataType":"GPLinearUnit","description":" The maximum distance from the input point for which the viewshed should be calculated. The maximum allowed distance is 20000 meters.","defaultValue":{"distance":15000,"units":"esriMeters"},"category":"","label":"Viewshed_Distance","visible":true,"required":true,"tooltip":"Viewshed_Distance"}],"outputParams":[{"name":"Viewshed_Result","dataType":"GPFeatureRecordSetLayer","description":"The resulting viewshed feature class given the user location and maximum distance.","defaultValue":{"displayFieldName":"","geometryType":"esriGeometryPolygon","spatialReference":{"wkid":54003,"latestWkid":54003},"fields":[{"name":"OBJECTID","type":"esriFieldTypeOID","alias":"OBJECTID"},{"name":"Id","type":"esriFieldTypeInteger","alias":"Id"},{"name":"grid_code","type":"esriFieldTypeInteger","alias":"grid_code"},{"name":"Shape_Length","type":"esriFieldTypeDouble","alias":"Shape_Length"},{"name":"Shape_Area","type":"esriFieldTypeDouble","alias":"Shape_Area"}],"features":[],"exceededTransferLimit":false},"category":"","label":"Viewshed_Result","visible":true,"required":true,"featureSetMode":"draw"}],"shareResults":true,"layerOrder":["Input_Observation_Point","Operational Layers","Viewshed_Result"],"useResultMapServer":false}},{"position":{"left":105,"bottom":55,"width":380,"height":410},"placeholderIndex":1,"id":"_6","positionRelativeTo":"map","name":"Edit","label":"Edit","uri":"widgets/Edit/Widget","config":{"editor":{"enableUndoRedo":true,"toolbarVisible":true,"toolbarOptions":{"mergeVisible":true,"cutVisible":true,"reshapeVisible":true},"layerInfos":[{"featureLayer":{"url":"https://services.arcgis.com/hRUr1F8lE8Jq2uJo/ArcGIS/rest/services/Trailsconditions/FeatureServer/0"},"disableGeometryUpdate":false,"fieldInfos":[{"fieldName":"OBJECTID","label":"OBJECTID","isEditable":true},{"fieldName":"Name","label":"Name","isEditable":true},{"fieldName":"Quality","label":"Quality","isEditable":true},{"fieldName":"Comments","label":"Comments","isEditable":true},{"fieldName":"Zip","label":"Zip","isEditable":true},{"fieldName":"email","label":"email","isEditable":true},{"fieldName":"Condition","label":"Condition","isEditable":true}]}]}}},{"position":{"left":155,"bottom":55,"width":380,"height":410},"placeholderIndex":1,"id":"_7","positionRelativeTo":"map","name":"Print","label":"Print","uri":"widgets/Print/Widget","config":{"serviceURL":"https://gleneagle.esri.com/portal/sharing/tools/newPrint","defaultTitle":"ArcGIS Web Map","defaultAuthor":"Web AppBuilder for ArcGIS","defaultCopyright":"","defaultFormat":"","defaultLayout":""}},{"uri":"widgets/OverviewMap/Widget","position":{"right":0,"bottom":0},"id":"widgets/OverviewMap/Widget_8","positionRelativeTo":"map","name":"OverviewMap","label":"Overview Map"},{"uri":"widgets/HomeButton/Widget","position":{"left":7,"top":75},"id":"widgets/HomeButton/Widget_9","positionRelativeTo":"map","name":"HomeButton","label":"Home Button"},{"uri":"widgets/MyLocation/Widget","position":{"left":7,"top":110},"id":"widgets/MyLocation/Widget_10","positionRelativeTo":"map","name":"MyLocation","label":"My Location"},{"uri":"widgets/AttributeTable/Widget","positionRelativeTo":"browser","id":"widgets/AttributeTable/Widget_11","position":{"left":0,"top":0},"name":"AttributeTable","label":"Attribute Table"},{"uri":"widgets/Splash/Widget","visible":false,"positionRelativeTo":"browser","id":"widgets/Splash/Widget_12","position":{"left":0,"top":0},"name":"Splash","label":"Splash"}]},"map":{"3D":false,"2D":true,"position":{"left":0,"top":40,"right":0,"bottom":0},"itemId":"c36bdb6179894173887a72abc116aa5f","id":"map","portalUrl":"https://gleneagle.esri.com/portal/"},"widgetPool":{"panel":{"uri":"themes/FoldableTheme/panels/FoldablePanel/Panel","positionRelativeTo":"map","position":{"top":5,"right":5,"bottom":5}},"widgets":[{"uri":"widgets/Legend/Widget","id":"widgets/Legend/Widget_13","name":"Legend","index":2,"label":"Legend"},{"uri":"widgets/LayerList/Widget","id":"widgets/LayerList/Widget_14","name":"LayerList","index":3,"label":"Layer List"},{"name":"BasemapGallery","label":"Basemap Gallery","uri":"widgets/BasemapGallery/Widget","config":{"basemapGallery":{"basemaps":[{"layers":[{"id":"World_Imagery_2017","visibility":true,"opacity":1,"url":"http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"}],"title":"Imagery","thumbnailUrl":"https://gleneagle.esri.com/portal/sharing/rest/content/items/d0135822507947b2a3809af36f2d91e6/info/thumbnail/tempimagery.jpg","spatialReference":{"wkid":"102100"}},{"layers":[{"id":"World_Imagery_6611","opacity":1,"visibility":true,"url":"http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"},{"id":"World_Boundaries_and_Places_1145","isReference":true,"opacity":1,"visibility":true,"url":"http://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer"}],"title":"Imagery with Labels","thumbnailUrl":"https://gleneagle.esri.com/portal/sharing/rest/content/items/30699b07b44f47ef929b9e216594a7db/info/thumbnail/tempimagery_with_labels_ne_usa.png","spatialReference":{"wkid":"102100"}},{"layers":[{"id":"World_Light_Gray_Base_1486","opacity":1,"visibility":true,"url":"http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer"},{"id":"World_Light_Gray_Reference_8656","isReference":true,"opacity":1,"visibility":true,"url":"http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer"}],"title":"Light Gray Canvas","thumbnailUrl":"https://gleneagle.esri.com/portal/sharing/rest/content/items/a9bfcd532c964b96ba617a0874423805/info/thumbnail/templight_gray_canvas_with_labels__ne_usa.png","spatialReference":{"wkid":"102100"}},{"layers":[{"id":"NatGeo_World_Map_2536","opacity":1,"visibility":true,"url":"http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer"}],"title":"National Geographic","thumbnailUrl":"https://gleneagle.esri.com/portal/sharing/rest/content/items/7634c349af5c4ca6ac70078db97d80fd/info/thumbnail/natgeo.jpg","spatialReference":{"wkid":"102100"}},{"layers":[{"id":"Ocean_Basemap_2089","opacity":1,"visibility":true,"url":"http://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer"},{"url":"http://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Reference/MapServer","id":"World_Ocean_Reference_1261","isReference":true,"visibility":true,"opacity":1}],"title":"Oceans","thumbnailUrl":"https://gleneagle.esri.com/portal/sharing/rest/content/items/b548883bdf3e482d8e28e2b8717a3d84/info/thumbnail/tempoceans.jpg","spatialReference":{"wkid":"102100"}},{"layers":[{"visibility":true,"opacity":1,"type":"OpenStreetMap"}],"title":"OpenStreetMap","thumbnailUrl":"https://gleneagle.esri.com/portal/sharing/rest/content/items/cb4f9f9b2242489c883a48ac7320b51b/info/thumbnail/temposm.jpg","spatialReference":{"wkid":"102100"}},{"layers":[{"id":"World_Street_Map_8421","opacity":1,"visibility":true,"url":"http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer"}],"title":"Streets","thumbnailUrl":"https://gleneagle.esri.com/portal/sharing/rest/content/items/dbf4603731084f8bb2d1d6198c20bef4/info/thumbnail/world_street_map.jpg","spatialReference":{"wkid":"102100"}},{"layers":[{"id":"World_Terrain_Base_3","layerType":"ArcGISTiledMapServiceLayer","opacity":1,"visibility":true,"url":"http://services.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer"},{"id":"World_Reference_Overlay_5790","layerType":"ArcGISTiledMapServiceLayer","isReference":true,"opacity":1,"visibility":true,"url":"http://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Reference_Overlay/MapServer"}],"title":"Terrain with Labels","thumbnailUrl":"https://gleneagle.esri.com/portal/sharing/rest/content/items/dc3aa6bfb50a4609bdd396daef45998c/info/thumbnail/tempTerrain_with_labels_ne_usa.png","spatialReference":{"wkid":102100,"latestWkid":3857}},{"layers":[{"id":"defaultBasemap","opacity":1,"visibility":true,"url":"http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"}],"title":"Topographic","thumbnailUrl":"https://gleneagle.esri.com/portal/sharing/rest/content/items/9d98f7113f9b469c8c302b210db7b922/info/thumbnail/topo_map_2.jpg","spatialReference":{"wkid":"102100"}}]}},"index":5,"id":"widgets/BasemapGallery/Widget_15"}],"groups":[]},"wabVersion":"1.0","_buildInfo":{"widgetManifestsMerged":true},"isWebTier":true,"httpProxy":{"useProxy":true,"url":"https://gleneagle.esri.com/portal/sharing/proxy"}}
+{
+    "theme": {
+        "name": "FoldableTheme",
+        "styles": ["black", "cyan", "green", "default"]
+    },
+    "portalUrl": "https://gleneagle.esri.com/portal/",
+    "appId": "61FxmwHAK7dMat1u",
+    "title": "Feature Geoprocessing Demo",
+    "subtitle": "WIP",
+    "logo": "images/app-logo.png",
+    "geometryService": "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
+    "links": [],
+    "widgetOnScreen": {
+        "panel": {
+            "uri": "themes/FoldableTheme/panels/TitlePanel/Panel",
+            "positionRelativeTo": "map"
+        },
+        "widgets": [{
+            "uri": "themes/FoldableTheme/widgets/HeaderController/Widget",
+            "positionRelativeTo": "browser",
+            "position": {
+                "left": 0,
+                "top": 0,
+                "right": 0,
+                "height": 40
+            },
+            "id": "themes/FoldableTheme/widgets/HeaderController/Widget_1",
+            "name": "HeaderController",
+            "isThemeWidget": true,
+            "label": "Header Controller"
+        }, {
+            "uri": "widgets/Scalebar/Widget",
+            "position": {
+                "left": 25,
+                "bottom": 25
+            },
+            "id": "widgets/Scalebar/Widget_2",
+            "positionRelativeTo": "map",
+            "name": "Scalebar",
+            "label": "Scalebar"
+        }, {
+            "uri": "widgets/Geocoder/Widget",
+            "position": {
+                "left": 45,
+                "top": 5
+            },
+            "id": "widgets/Geocoder/Widget_3",
+            "positionRelativeTo": "map",
+            "name": "Geocoder",
+            "label": "Geocoder"
+        }, {
+            "uri": "widgets/Coordinate/Widget",
+            "position": {
+                "left": 200,
+                "bottom": 20
+            },
+            "id": "widgets/Coordinate/Widget_4",
+            "positionRelativeTo": "map",
+            "name": "Coordinate",
+            "label": "Coordinate"
+        }, {
+            "position": {
+                "left": 55,
+                "bottom": 55,
+                "width": 400,
+                "height": 410
+            },
+            "placeholderIndex": 1,
+            "id": "_5",
+            "positionRelativeTo": "map",
+            "name": "Geoprocessing",
+            "label": "Geoprocessing",
+            "uri": "widgets/Geoprocessing/Widget",
+            "config": {
+                "name": "Viewshed",
+                "displayName": "Viewshed",
+                "description": "Calculates the viewshed of a point given a user defined location and viewing distance.",
+                "category": "",
+                "helpUrl": "https://sampleserver6.arcgisonline.com/arcgis/rest/directories/arcgisoutput/Elevation/ESRI_Elevation_World_GPServer/Elevation_ESRI_Elevation_World/Viewshed.htm",
+                "taskUrl": "https://sampleserver6.arcgisonline.com/ArcGIS/rest/services/Elevation/ESRI_Elevation_World/GPServer/Viewshed",
+                "isSynchronous": true,
+                "inputParams": [{
+                    "name": "Input_Observation_Point",
+                    "dataType": "GPFeatureRecordSetLayer",
+                    "description": "The input location from which the viewshed should be calculated.",
+                    "defaultValue": {
+                        "displayFieldName": "",
+                        "geometryType": "esriGeometryPoint",
+                        "spatialReference": {
+                            "wkid": 54003,
+                            "latestWkid": 54003
+                        },
+                        "fields": [{
+                            "name": "OBJECTID",
+                            "type": "esriFieldTypeOID",
+                            "alias": "OBJECTID"
+                        }, {
+                            "name": "OffsetA",
+                            "type": "esriFieldTypeSmallInteger",
+                            "alias": "OffsetA"
+                        }],
+                        "features": [],
+                        "exceededTransferLimit": false
+                    },
+                    "category": "",
+                    "label": "Input_Observation_Point",
+                    "visible": true,
+                    "required": true,
+                    "featureSetMode": "layers",
+                    "tooltip": "Input_Observation_Point",
+                    "symbol": {
+                        "color": [0, 0, 128, 128],
+                        "size": 18,
+                        "angle": 0,
+                        "xoffset": 0,
+                        "yoffset": 0,
+                        "type": "esriSMS",
+                        "style": "esriSMSCircle",
+                        "outline": {
+                            "color": [0, 0, 128, 255],
+                            "width": 0.75,
+                            "type": "esriSLS",
+                            "style": "esriSLSSolid"
+                        }
+                    }
+                }, {
+                    "name": "Viewshed_Distance",
+                    "dataType": "GPLinearUnit",
+                    "description": " The maximum distance from the input point for which the viewshed should be calculated. The maximum allowed distance is 20000 meters.",
+                    "defaultValue": {
+                        "distance": 15,
+                        "units": "esriMiles"
+                    },
+                    "category": "",
+                    "label": "Viewshed_Distance",
+                    "visible": true,
+                    "required": true,
+                    "tooltip": "Viewshed_Distance"
+                }],
+                "outputParams": [{
+                    "name": "Viewshed_Result",
+                    "dataType": "GPFeatureRecordSetLayer",
+                    "description": "The resulting viewshed feature class given the user location and maximum distance.",
+                    "defaultValue": {
+                        "displayFieldName": "",
+                        "geometryType": "esriGeometryPolygon",
+                        "spatialReference": {
+                            "wkid": 54003,
+                            "latestWkid": 54003
+                        },
+                        "fields": [{
+                            "name": "OBJECTID",
+                            "type": "esriFieldTypeOID",
+                            "alias": "OBJECTID"
+                        }, {
+                            "name": "Id",
+                            "type": "esriFieldTypeInteger",
+                            "alias": "Id"
+                        }, {
+                            "name": "grid_code",
+                            "type": "esriFieldTypeInteger",
+                            "alias": "grid_code"
+                        }, {
+                            "name": "Shape_Length",
+                            "type": "esriFieldTypeDouble",
+                            "alias": "Shape_Length"
+                        }, {
+                            "name": "Shape_Area",
+                            "type": "esriFieldTypeDouble",
+                            "alias": "Shape_Area"
+                        }],
+                        "features": [],
+                        "exceededTransferLimit": false
+                    },
+                    "category": "",
+                    "label": "Viewshed_Result",
+                    "visible": true,
+                    "required": true,
+                    "featureSetMode": "draw"
+                }],
+                "shareResults": true,
+                "layerOrder": ["Input_Observation_Point", "Operational Layers", "Viewshed_Result"],
+                "useResultMapServer": false
+            }
+        }, {
+            "position": {
+                "left": 55,
+                "top": 45,
+                "width": 400,
+                "height": 410
+            },
+            "placeholderIndex": 1,
+            "id": "_26",
+            "positionRelativeTo": "map",
+            "name": "Geoprocessing",
+            "label": "Geoprocessing",
+            "uri": "widgets/Geoprocessing/Widget",
+            "config": {
+                "name": "HotSpot",
+                "displayName": "Hot Spot Analysis",
+                "description": "",
+                "category": "",
+                "helpUrl": "https://bmajor2.esri.com/arcgis/rest/directories/arcgisoutput/PortalAnalysis/HotSpot_GPServer/PortalAnalysis_HotSpot/HotSpot.htm",
+                "taskUrl": "https://bmajor2.esri.com/arcgis/rest/services/PortalAnalysis/HotSpot/GPServer/Hot Spot Analysis",
+                "isSynchronous": true,
+                "inputParams": [{
+                    "name": "InputFeatures",
+                    "dataType": "GPFeatureRecordSetLayer",
+                    "description": "Input FeatureSet to perform analysis.  Cell size and output units will be automatically derived based on input data source.",
+                    "defaultValue": {
+                        "displayFieldName": "",
+                        "geometryType": "esriGeometryPoint",
+                        "spatialReference": {
+                            "wkid": 54003,
+                            "latestWkid": 54003
+                        },
+                        "fields": [{
+                            "name": "OBJECTID",
+                            "type": "esriFieldTypeOID",
+                            "alias": "OBJECTID"
+                        }, {
+                            "name": "OffsetA",
+                            "type": "esriFieldTypeSmallInteger",
+                            "alias": "OffsetA"
+                        }],
+                        "features": [],
+                        "exceededTransferLimit": false
+                    },
+                    "category": "",
+                    "label": "InputFeatures",
+                    "visible": true,
+                    "required": true,
+                    "featureSetMode": "layers",
+                    "tooltip": "InputFeatures",
+                    "featureSetUrl": "https://services.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/ChicagoCrime/FeatureServer/0"
+                }],
+                "outputParams": [{
+                    "name": "OutputFeatures",
+                    "dataType": "GPFeatureRecordSetLayer",
+                    "description": "",
+                    "renderer": {
+                        "colorInfo": {
+                            "field": "gridcode",
+                            "minDataValue": 0,
+                            "maxDataValue": 10,
+                            "colors": [
+                                [34,139,34, 255],
+                                [255, 0, 0, 255]
+                            ]
+                        },
+                        "type": "simple",
+                        "symbol": {
+                            "color": [0, 0, 0, 64],
+                            "outline": {
+                                "color": [0, 0, 0, 127],
+                                "width": 1,
+                                "type": "esriSLS",
+                                "style": "esriSLSSolid"
+                            },
+                            "type": "esriSFS",
+                            "style": "esriSFSSolid"
+                        }
+                    },
+                    "defaultValue": {
+                        "displayFieldName": "",
+                        "geometryType": "esriGeometryPolygon",
+                        "spatialReference": {
+                            "wkid": 2924,
+                            "latestWkid": 2924
+                        },
+                        
+                        "fields": [{
+                            "name": "OBJECTID",
+                            "type": "esriFieldTypeOID",
+                            "alias": "OBJECTID"
+                        }, {
+                            "name": "Id",
+                            "type": "esriFieldTypeInteger",
+                            "alias": "Id"
+                        }, {
+                            "name": "gridcode",
+                            "type": "esriFieldTypeInteger",
+                            "alias": "gridcode"
+                        }, {
+                            "name": "Shape_Length",
+                            "type": "esriFieldTypeDouble",
+                            "alias": "Shape_Length"
+                        }, {
+                            "name": "Shape_Area",
+                            "type": "esriFieldTypeDouble",
+                            "alias": "Shape_Area"
+                        }],
+                        "features": [{
+                            "attributes": {
+                                "OBJECTID": 1,
+                                "Id": 1,
+                                "gridcode": 5,
+                                "Shape_Length": 23669.845633083005,
+                                "Shape_Area": 4.2015264749496385E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1786734217421383E7, 6851684.129549518],
+                                        [1.1783974160783485E7, 6851914.822082922],
+                                        [1.1781732519611374E7, 6853846.101551905],
+                                        [1.178149284160854E7, 6856828.99413161],
+                                        [1.1783270794404298E7, 6858892.666920036],
+                                        [1.1784811059324905E7, 6859016.429234847],
+                                        [1.1786577603763238E7, 6858484.562612355],
+                                        [1.1787859923642918E7, 6857379.778356105],
+                                        [1.1788758259904876E7, 6855769.679596618],
+                                        [1.1788966764933944E7, 6853174.765125677],
+                                        [1.1786906928622127E7, 6851884.594348639],
+                                        [1.1786734217421383E7, 6851684.129549518]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 2,
+                                "Id": 2,
+                                "gridcode": 5,
+                                "Shape_Length": 14266.64976804457,
+                                "Shape_Area": 1.4521774454768565E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1798302673416272E7, 6848698.721550852],
+                                        [1.1796685687505156E7, 6849185.559753627],
+                                        [1.1795890906216532E7, 6850610.065577075],
+                                        [1.1796762895350903E7, 6852885.464896083],
+                                        [1.1799018510123849E7, 6853713.7922220975],
+                                        [1.1800341264616191E7, 6851342.990620449],
+                                        [1.1799521354761824E7, 6849800.338400647],
+                                        [1.1798475384617016E7, 6848899.186349958],
+                                        [1.1798302673416272E7, 6848698.721550852]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 3,
+                                "Id": 3,
+                                "gridcode": 3,
+                                "Shape_Length": 14859.574099899346,
+                                "Shape_Area": 1.6280384842281293E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.175090932143715E7, 6839369.321554959],
+                                        [1.1748555695008084E7, 6839541.244107068],
+                                        [1.1747398318280786E7, 6841034.600093886],
+                                        [1.1747750286892861E7, 6843244.592825338],
+                                        [1.1749439913890317E7, 6843954.259852186],
+                                        [1.1751670815775052E7, 6843119.508029386],
+                                        [1.1752105674346581E7, 6841179.708592907],
+                                        [1.175090932143715E7, 6839369.321554959]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 4,
+                                "Id": 4,
+                                "gridcode": 10,
+                                "Shape_Length": 15637.09214294367,
+                                "Shape_Area": 1.7264540083552636E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1795690441417456E7, 6835637.561556593],
+                                        [1.1792959188960388E7, 6835916.159511253],
+                                        [1.1792774593935326E7, 6838213.510024697],
+                                        [1.1793977394118398E7, 6840133.852332413],
+                                        [1.179599068592611E7, 6840873.191907674],
+                                        [1.1796973757784545E7, 6840026.228843227],
+                                        [1.179716471894072E7, 6837649.686050475],
+                                        [1.1795690441417456E7, 6835637.561556593]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 5,
+                                "Id": 5,
+                                "gridcode": 2,
+                                "Shape_Length": 53697.167248283244,
+                                "Shape_Area": 9.868051502125815E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.175128249743703E7, 6834891.209556922],
+                                        [1.174774919929804E7, 6835086.711848646],
+                                        [1.1744487480995104E7, 6838826.41242823],
+                                        [1.1743642885300085E7, 6841979.905078888],
+                                        [1.174413366745773E7, 6844857.020518303],
+                                        [1.1746009495960325E7, 6846956.457240447],
+                                        [1.1749603793365315E7, 6847724.39031069],
+                                        [1.1753521611801714E7, 6846514.594785869],
+                                        [1.175518369731021E7, 6844135.133708492],
+                                        [1.1755386100989133E7, 6840739.261150494],
+                                        [1.1753949539091393E7, 6837609.271367565],
+                                        [1.1752817183451623E7, 6836341.930117443],
+                                        [1.1751634681717396E7, 6835285.377276182],
+                                        [1.175128249743703E7, 6834891.209556922]
+                                    ],
+                                    [
+                                        [1.175090932143715E7, 6839369.321554959],
+                                        [1.1752105674346581E7, 6841179.708592907],
+                                        [1.1751670815775052E7, 6843119.508029386],
+                                        [1.1749439913890317E7, 6843954.259852186],
+                                        [1.1747750286892861E7, 6843244.592825338],
+                                        [1.1747398318280786E7, 6841034.600093886],
+                                        [1.1748555695008084E7, 6839541.244107068],
+                                        [1.175090932143715E7, 6839369.321554959]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 6,
+                                "Id": 6,
+                                "gridcode": 9,
+                                "Shape_Length": 38371.74674415569,
+                                "Shape_Area": 2.018306441654761E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1795317265417576E7, 6834518.033557087],
+                                        [1.179263319521664E7, 6834797.739036337],
+                                        [1.179178258785528E7, 6837168.3626938015],
+                                        [1.1792333571377307E7, 6839752.394098476],
+                                        [1.1795161010494918E7, 6842157.64711757],
+                                        [1.1797633893692076E7, 6841685.872957557],
+                                        [1.1798478766980067E7, 6839331.22441709],
+                                        [1.1797571223174289E7, 6836036.620605558],
+                                        [1.179549335898137E7, 6834715.115993157],
+                                        [1.1795317265417576E7, 6834518.033557087]
+                                    ],
+                                    [
+                                        [1.1795690441417456E7, 6835637.561556593],
+                                        [1.179716471894072E7, 6837649.686050475],
+                                        [1.1796973757784545E7, 6840026.228843227],
+                                        [1.179599068592611E7, 6840873.191907674],
+                                        [1.1793977394118398E7, 6840133.852332413],
+                                        [1.1792774593935326E7, 6838213.510024697],
+                                        [1.1792959188960388E7, 6835916.159511253],
+                                        [1.1795690441417456E7, 6835637.561556593]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 7,
+                                "Id": 7,
+                                "gridcode": 8,
+                                "Shape_Length": 50875.12649313271,
+                                "Shape_Area": 2.0808511891887203E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1795690441417456E7, 6833771.681557432],
+                                        [1.1792333804840058E7, 6834014.312010199],
+                                        [1.1791036235855654E7, 6836402.137887746],
+                                        [1.1791494659931228E7, 6839549.440927923],
+                                        [1.179338599306643E7, 6841974.304819554],
+                                        [1.1795226647698134E7, 6843260.026992023],
+                                        [1.1796859958920449E7, 6843357.375272244],
+                                        [1.1798337447980314E7, 6842417.701864764],
+                                        [1.1799225118979692E7, 6840784.1828036755],
+                                        [1.1798787518644214E7, 6836926.5522078425],
+                                        [1.179724611772789E7, 6835201.413245633],
+                                        [1.1795866534981191E7, 6833968.763993502],
+                                        [1.1795690441417456E7, 6833771.681557432]
+                                    ],
+                                    [
+                                        [1.1795317265417576E7, 6834518.033557087],
+                                        [1.179549335898137E7, 6834715.115993157],
+                                        [1.1797571223174289E7, 6836036.620605558],
+                                        [1.1798478766980067E7, 6839331.22441709],
+                                        [1.1797633893692076E7, 6841685.872957557],
+                                        [1.1795161010494918E7, 6842157.64711757],
+                                        [1.1792333571377307E7, 6839752.394098476],
+                                        [1.179178258785528E7, 6837168.3626938015],
+                                        [1.179263319521664E7, 6834797.739036337],
+                                        [1.1795317265417576E7, 6834518.033557087]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 8,
+                                "Id": 8,
+                                "gridcode": 7,
+                                "Shape_Length": 61454.15505993176,
+                                "Shape_Area": 2.450770551075638E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1795690441417456E7, 6833025.329557747],
+                                        [1.179256840075703E7, 6833209.084686264],
+                                        [1.1790724557365537E7, 6834685.614271134],
+                                        [1.1790300030945063E7, 6838098.606483117],
+                                        [1.1791514008869946E7, 6840774.576664865],
+                                        [1.1793377696596771E7, 6843101.898672998],
+                                        [1.1795563135878071E7, 6844386.556027472],
+                                        [1.1798215682911083E7, 6843986.4663258195],
+                                        [1.179982011308065E7, 6841790.051447317],
+                                        [1.1800119474986166E7, 6839383.337862372],
+                                        [1.1799415573350862E7, 6836921.404638484],
+                                        [1.1797945845504463E7, 6834501.682621986],
+                                        [1.1795856387892082E7, 6833232.559082925],
+                                        [1.1795690441417456E7, 6833025.329557747]
+                                    ],
+                                    [
+                                        [1.1795690441417456E7, 6833771.681557432],
+                                        [1.1795866534981191E7, 6833968.763993502],
+                                        [1.179724611772789E7, 6835201.413245633],
+                                        [1.1798787518644214E7, 6836926.5522078425],
+                                        [1.1799225118979692E7, 6840784.1828036755],
+                                        [1.1798337447980314E7, 6842417.701864764],
+                                        [1.1796859958920449E7, 6843357.375272244],
+                                        [1.1795226647698134E7, 6843260.026992023],
+                                        [1.179338599306643E7, 6841974.304819554],
+                                        [1.1791494659931228E7, 6839549.440927923],
+                                        [1.1791036235855654E7, 6836402.137887746],
+                                        [1.1792333804840058E7, 6834014.312010199],
+                                        [1.1795690441417456E7, 6833771.681557432]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 9,
+                                "Id": 9,
+                                "gridcode": 6,
+                                "Shape_Length": 72122.66785031266,
+                                "Shape_Area": 2.9413553693983138E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.179457091341789E7, 6831905.801558241],
+                                        [1.179201156927742E7, 6832225.916026175],
+                                        [1.1789984207067281E7, 6834637.358655736],
+                                        [1.1789572435685888E7, 6837947.820852876],
+                                        [1.1790893658434674E7, 6841083.2941637635],
+                                        [1.1792920918149024E7, 6843747.107198894],
+                                        [1.1795135591524228E7, 6845364.876064464],
+                                        [1.1796762172185764E7, 6845567.197177291],
+                                        [1.1798621076772958E7, 6845035.707796484],
+                                        [1.1800556614090323E7, 6842615.604267627],
+                                        [1.1800930518949538E7, 6839609.597450301],
+                                        [1.1800161925350487E7, 6836921.404638484],
+                                        [1.1798726710134327E7, 6834558.499487922],
+                                        [1.1796707057889774E7, 6832943.233229369],
+                                        [1.1794736859892577E7, 6832113.03108342],
+                                        [1.179457091341789E7, 6831905.801558241]
+                                    ],
+                                    [
+                                        [1.1795690441417456E7, 6833025.329557747],
+                                        [1.1795856387892082E7, 6833232.559082925],
+                                        [1.1797945845504463E7, 6834501.682621986],
+                                        [1.1799415573350862E7, 6836921.404638484],
+                                        [1.1800119474986166E7, 6839383.337862372],
+                                        [1.179982011308065E7, 6841790.051447317],
+                                        [1.1798215682911083E7, 6843986.4663258195],
+                                        [1.1795563135878071E7, 6844386.556027472],
+                                        [1.1793377696596771E7, 6843101.898672998],
+                                        [1.1791514008869946E7, 6840774.576664865],
+                                        [1.1790300030945063E7, 6838098.606483117],
+                                        [1.1790724557365537E7, 6834685.614271134],
+                                        [1.179256840075703E7, 6833209.084686264],
+                                        [1.1795690441417456E7, 6833025.329557747]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 10,
+                                "Id": 10,
+                                "gridcode": 5,
+                                "Shape_Length": 83892.42343546914,
+                                "Shape_Area": 3.683543531220941E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1793824561418265E7, 6830786.273558736],
+                                        [1.1791609671662867E7, 6831190.295115069],
+                                        [1.1790459799197659E7, 6832180.968749046],
+                                        [1.1789230594944939E7, 6834384.094258562],
+                                        [1.1788986153732136E7, 6837426.2735694945],
+                                        [1.1790106712384373E7, 6841148.102858871],
+                                        [1.179290701287873E7, 6845047.95320338],
+                                        [1.179601078650105E7, 6846985.1987849325],
+                                        [1.1798231888643757E7, 6847163.666835874],
+                                        [1.1799406627740845E7, 6846151.574416459],
+                                        [1.180092789961116E7, 6844006.020256206],
+                                        [1.1801807296917796E7, 6839974.314695433],
+                                        [1.180085351609546E7, 6836806.418530807],
+                                        [1.1799552428086877E7, 6834729.157924563],
+                                        [1.1798500535959631E7, 6833508.224517435],
+                                        [1.1795643253467143E7, 6831482.308637589],
+                                        [1.1793997272619009E7, 6830986.738357842],
+                                        [1.1793824561418265E7, 6830786.273558736]
+                                    ],
+                                    [
+                                        [1.179457091341789E7, 6831905.801558241],
+                                        [1.1794736859892577E7, 6832113.03108342],
+                                        [1.1796707057889774E7, 6832943.233229369],
+                                        [1.1798726710134327E7, 6834558.499487922],
+                                        [1.1800161925350487E7, 6836921.404638484],
+                                        [1.1800930518949538E7, 6839609.597450301],
+                                        [1.1800556614090323E7, 6842615.604267627],
+                                        [1.1798621076772958E7, 6845035.707796484],
+                                        [1.1796762172185764E7, 6845567.197177291],
+                                        [1.1795135591524228E7, 6845364.876064464],
+                                        [1.1792920918149024E7, 6843747.107198894],
+                                        [1.1790893658434674E7, 6841083.2941637635],
+                                        [1.1789572435685888E7, 6837947.820852876],
+                                        [1.1789984207067281E7, 6834637.358655736],
+                                        [1.179201156927742E7, 6832225.916026175],
+                                        [1.179457091341789E7, 6831905.801558241]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 11,
+                                "Id": 11,
+                                "gridcode": 1,
+                                "Shape_Length": 22446.90459682066,
+                                "Shape_Area": 2.7333553987472728E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1801661257414773E7, 6828920.393559575],
+                                        [1.1799657099126145E7, 6829194.293787777],
+                                        [1.1799590715980902E7, 6830869.078816757],
+                                        [1.1804358674853072E7, 6836932.263504341],
+                                        [1.1805041331376433E7, 6836959.319561511],
+                                        [1.1806318845339626E7, 6833314.441878319],
+                                        [1.1805213541486368E7, 6831712.098638117],
+                                        [1.1803141257623002E7, 6830373.918520406],
+                                        [1.1802199679500997E7, 6829501.499472886],
+                                        [1.1801661257414773E7, 6828920.393559575]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 12,
+                                "Id": 12,
+                                "gridcode": 4,
+                                "Shape_Length": 186737.3768291542,
+                                "Shape_Area": 1.872414957379468E8
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1792331857418895E7, 6827800.86556007],
+                                        [1.1790328319799542E7, 6828435.189596146],
+                                        [1.1789017711065397E7, 6830464.772549719],
+                                        [1.1788298605879083E7, 6834231.309959248],
+                                        [1.1788427021790162E7, 6837471.215152413],
+                                        [1.1789252341147691E7, 6840620.929692164],
+                                        [1.1790771602960512E7, 6843492.069054142],
+                                        [1.1792898733491793E7, 6846265.9626316875],
+                                        [1.1794004037345052E7, 6847900.407002538],
+                                        [1.1791925011532515E7, 6851484.716756433],
+                                        [1.17871820787303E7, 6850241.931803614],
+                                        [1.1783323195407405E7, 6850394.882658675],
+                                        [1.178053346052681E7, 6852665.2539868355],
+                                        [1.1779772349124804E7, 6855069.259973109],
+                                        [1.177984286057511E7, 6856848.22206828],
+                                        [1.1780994745944917E7, 6859025.0844399035],
+                                        [1.178336798324652E7, 6860557.608076811],
+                                        [1.1786899298375532E7, 6860417.640029356],
+                                        [1.1791610417604879E7, 6856143.375193477],
+                                        [1.179322164097163E7, 6855609.591044471],
+                                        [1.1798651056808934E7, 6858056.026041791],
+                                        [1.1800408558835655E7, 6857440.028832987],
+                                        [1.1801989995769635E7, 6854991.039980769],
+                                        [1.1802623363177791E7, 6851673.585289016],
+                                        [1.1802579039417058E7, 6850555.406818196],
+                                        [1.180162659104079E7, 6846003.038000688],
+                                        [1.1802584130044267E7, 6840503.976233587],
+                                        [1.1801819744469285E7, 6836850.488899037],
+                                        [1.1799473113381952E7, 6833440.275463387],
+                                        [1.1795869917344242E7, 6830606.800479054],
+                                        [1.1793271909491599E7, 6828353.514639571],
+                                        [1.1792511333345741E7, 6827994.568480223],
+                                        [1.1792331857418895E7, 6827800.86556007]
+                                    ],
+                                    [
+                                        [1.1786734217421383E7, 6851684.129549518],
+                                        [1.1786906928622127E7, 6851884.594348639],
+                                        [1.1788966764933944E7, 6853174.765125677],
+                                        [1.1788758259904876E7, 6855769.679596618],
+                                        [1.1787859923642918E7, 6857379.778356105],
+                                        [1.1786577603763238E7, 6858484.562612355],
+                                        [1.1784811059324905E7, 6859016.429234847],
+                                        [1.1783270794404298E7, 6858892.666920036],
+                                        [1.178149284160854E7, 6856828.99413161],
+                                        [1.1781732519611374E7, 6853846.101551905],
+                                        [1.1783974160783485E7, 6851914.822082922],
+                                        [1.1786734217421383E7, 6851684.129549518]
+                                    ],
+                                    [
+                                        [1.1798302673416272E7, 6848698.721550852],
+                                        [1.1798475384617016E7, 6848899.186349958],
+                                        [1.1799521354761824E7, 6849800.338400647],
+                                        [1.1800341264616191E7, 6851342.990620449],
+                                        [1.1799018510123849E7, 6853713.7922220975],
+                                        [1.1796762895350903E7, 6852885.464896083],
+                                        [1.1795890906216532E7, 6850610.065577075],
+                                        [1.1796685687505156E7, 6849185.559753627],
+                                        [1.1798302673416272E7, 6848698.721550852]
+                                    ],
+                                    [
+                                        [1.1793824561418265E7, 6830786.273558736],
+                                        [1.1793997272619009E7, 6830986.738357842],
+                                        [1.1795643253467143E7, 6831482.308637589],
+                                        [1.1798500535959631E7, 6833508.224517435],
+                                        [1.1799552428086877E7, 6834729.157924563],
+                                        [1.180085351609546E7, 6836806.418530807],
+                                        [1.1801807296917796E7, 6839974.314695433],
+                                        [1.180092789961116E7, 6844006.020256206],
+                                        [1.1799406627740845E7, 6846151.574416459],
+                                        [1.1798231888643757E7, 6847163.666835874],
+                                        [1.179601078650105E7, 6846985.1987849325],
+                                        [1.179290701287873E7, 6845047.95320338],
+                                        [1.1790106712384373E7, 6841148.102858871],
+                                        [1.1788986153732136E7, 6837426.2735694945],
+                                        [1.1789230594944939E7, 6834384.094258562],
+                                        [1.1790459799197659E7, 6832180.968749046],
+                                        [1.1791609671662867E7, 6831190.295115069],
+                                        [1.1793824561418265E7, 6830786.273558736]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 13,
+                                "Id": 13,
+                                "gridcode": 4,
+                                "Shape_Length": 10852.78412903705,
+                                "Shape_Area": 8286636.57210417
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.182143958540611E7, 6826681.337560549],
+                                        [1.1820422530479252E7, 6826841.629680842],
+                                        [1.181910938781993E7, 6827748.2709537],
+                                        [1.1818769477417529E7, 6829264.54615134],
+                                        [1.1820194249445453E7, 6830192.341428682],
+                                        [1.1821959740454167E7, 6829097.079321563],
+                                        [1.1822336560750902E7, 6827416.167318478],
+                                        [1.1821592002428576E7, 6826902.093690753],
+                                        [1.182143958540611E7, 6826681.337560549]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 14,
+                                "Id": 14,
+                                "gridcode": 3,
+                                "Shape_Length": 218448.0960192069,
+                                "Shape_Area": 1.994542158881535E8
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.179307820941858E7, 6824442.281561539],
+                                        [1.1791018629346356E7, 6824621.757488325],
+                                        [1.1789020922602043E7, 6825442.327871516],
+                                        [1.1787120883013874E7, 6828674.286789224],
+                                        [1.1786554741494596E7, 6831876.558922946],
+                                        [1.1787301093494222E7, 6835443.858636454],
+                                        [1.1787885496357411E7, 6838504.831700221],
+                                        [1.1789295019280598E7, 6842526.356006622],
+                                        [1.179172961458373E7, 6847127.312127456],
+                                        [1.1790152636219203E7, 6848588.461640686],
+                                        [1.178570655986835E7, 6848412.237109989],
+                                        [1.1782286916814566E7, 6849308.281450838],
+                                        [1.178074200541541E7, 6850125.771264315],
+                                        [1.177937903553769E7, 6851596.786003053],
+                                        [1.1778524929081902E7, 6853406.556642368],
+                                        [1.1777971696345434E7, 6856451.35529165],
+                                        [1.177881763729854E7, 6858864.916168779],
+                                        [1.1781422409877226E7, 6861278.3674322665],
+                                        [1.1783168836657971E7, 6862102.579265222],
+                                        [1.1787475649620265E7, 6861931.873851329],
+                                        [1.1790638335579231E7, 6859506.598552719],
+                                        [1.1792320338024229E7, 6858712.793821827],
+                                        [1.1796243093344063E7, 6860087.703042522],
+                                        [1.1797748950977445E7, 6860564.461063191],
+                                        [1.1800810092020541E7, 6860443.128754169],
+                                        [1.1802651105387717E7, 6859468.956951991],
+                                        [1.1803997331429645E7, 6857384.221266463],
+                                        [1.1804452965340436E7, 6847262.672132343],
+                                        [1.180370661334075E7, 6844414.312472969],
+                                        [1.180325907090789E7, 6838813.218934715],
+                                        [1.1802105269435093E7, 6835521.299945012],
+                                        [1.17972167469728E7, 6830070.983495697],
+                                        [1.1796257317490295E7, 6827607.162639916],
+                                        [1.1795590553517804E7, 6826347.090053812],
+                                        [1.1793257685345367E7, 6824635.981634572],
+                                        [1.179307820941858E7, 6824442.281561539]
+                                    ],
+                                    [
+                                        [1.1792331857418895E7, 6827800.86556007],
+                                        [1.1792511333345741E7, 6827994.568480223],
+                                        [1.1793271909491599E7, 6828353.514639571],
+                                        [1.1795869917344242E7, 6830606.800479054],
+                                        [1.1799473113381952E7, 6833440.275463387],
+                                        [1.1801819744469285E7, 6836850.488899037],
+                                        [1.1802584130044267E7, 6840503.976233587],
+                                        [1.180162659104079E7, 6846003.038000688],
+                                        [1.1802579039417058E7, 6850555.406818196],
+                                        [1.1802623363177791E7, 6851673.585289016],
+                                        [1.1801989995769635E7, 6854991.039980769],
+                                        [1.1800408558835655E7, 6857440.028832987],
+                                        [1.1798651056808934E7, 6858056.026041791],
+                                        [1.179322164097163E7, 6855609.591044471],
+                                        [1.1791610417604879E7, 6856143.375193477],
+                                        [1.1786899298375532E7, 6860417.640029356],
+                                        [1.178336798324652E7, 6860557.608076811],
+                                        [1.1780994745944917E7, 6859025.0844399035],
+                                        [1.177984286057511E7, 6856848.22206828],
+                                        [1.1779772349124804E7, 6855069.259973109],
+                                        [1.178053346052681E7, 6852665.2539868355],
+                                        [1.1783323195407405E7, 6850394.882658675],
+                                        [1.17871820787303E7, 6850241.931803614],
+                                        [1.1791925011532515E7, 6851484.716756433],
+                                        [1.1794004037345052E7, 6847900.407002538],
+                                        [1.1792898733491793E7, 6846265.9626316875],
+                                        [1.1790771602960512E7, 6843492.069054142],
+                                        [1.1789252341147691E7, 6840620.929692164],
+                                        [1.1788427021790162E7, 6837471.215152413],
+                                        [1.1788298605879083E7, 6834231.309959248],
+                                        [1.1789017711065397E7, 6830464.772549719],
+                                        [1.1790328319799542E7, 6828435.189596146],
+                                        [1.1792331857418895E7, 6827800.86556007]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 15,
+                                "Id": 15,
+                                "gridcode": 3,
+                                "Shape_Length": 52618.53962637825,
+                                "Shape_Area": 8.853602153339016E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.182293228940542E7, 6823695.929561853],
+                                        [1.1819423281359226E7, 6823949.572624266],
+                                        [1.1816219198465496E7, 6826812.389892653],
+                                        [1.1814154448047116E7, 6829657.455449313],
+                                        [1.1810845494816646E7, 6831583.927578211],
+                                        [1.1810690629282132E7, 6834182.240071267],
+                                        [1.181181485500811E7, 6835440.479120538],
+                                        [1.1813053619845927E7, 6835088.291993007],
+                                        [1.1815987927969381E7, 6833274.291976348],
+                                        [1.1821583637628436E7, 6832749.148796901],
+                                        [1.182475807075055E7, 6830445.360974655],
+                                        [1.1825720614968032E7, 6827762.768422186],
+                                        [1.1825106630663872E7, 6825533.868053615],
+                                        [1.1824340958196536E7, 6824676.923032254],
+                                        [1.1823108382969156E7, 6823893.011997938],
+                                        [1.182293228940542E7, 6823695.929561853]
+                                    ],
+                                    [
+                                        [1.182143958540611E7, 6826681.337560549],
+                                        [1.1821592002428576E7, 6826902.093690753],
+                                        [1.1822336560750902E7, 6827416.167318478],
+                                        [1.1821959740454167E7, 6829097.079321563],
+                                        [1.1820194249445453E7, 6830192.341428682],
+                                        [1.1818769477417529E7, 6829264.54615134],
+                                        [1.181910938781993E7, 6827748.2709537],
+                                        [1.1820422530479252E7, 6826841.629680842],
+                                        [1.182143958540611E7, 6826681.337560549]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 16,
+                                "Id": 16,
+                                "gridcode": 3,
+                                "Shape_Length": 16571.83147913402,
+                                "Shape_Area": 1.7979457994652275E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1768075417429611E7, 6811754.297567129],
+                                        [1.1765192482503623E7, 6811995.259615228],
+                                        [1.1763051418230996E7, 6814583.65563485],
+                                        [1.1763737007274538E7, 6816031.9447660595],
+                                        [1.17671469530821E7, 6815591.292331919],
+                                        [1.1769367656629845E7, 6813678.0478618145],
+                                        [1.1768649058228552E7, 6812300.184767708],
+                                        [1.1768248128630355E7, 6811954.76236625],
+                                        [1.1768075417429611E7, 6811754.297567129]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 17,
+                                "Id": 17,
+                                "gridcode": 3,
+                                "Shape_Length": 13142.396973141404,
+                                "Shape_Area": 1.0177964379955038E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1820320057406545E7, 6809515.241568118],
+                                        [1.1817205032017693E7, 6810044.410556763],
+                                        [1.1816598632406399E7, 6811049.701237723],
+                                        [1.1817953348521143E7, 6811866.872175232],
+                                        [1.1820756974436417E7, 6812281.183176026],
+                                        [1.1822214943731159E7, 6811155.8186073005],
+                                        [1.182165019729428E7, 6810424.157679409],
+                                        [1.182048262151818E7, 6809725.853456318],
+                                        [1.1820320057406545E7, 6809515.241568118]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 18,
+                                "Id": 18,
+                                "gridcode": 2,
+                                "Shape_Length": 61722.00456197151,
+                                "Shape_Area": 1.4363762974420226E8
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.182143958540611E7, 6805783.481569767],
+                                        [1.1816473951899588E7, 6806034.362938419],
+                                        [1.1812055344436452E7, 6807754.994930357],
+                                        [1.1810868095151484E7, 6808855.043024227],
+                                        [1.1809691653484374E7, 6811078.303273976],
+                                        [1.1811257448412895E7, 6813896.278608173],
+                                        [1.1814646906438977E7, 6815288.525286511],
+                                        [1.1821375092739835E7, 6816067.903726593],
+                                        [1.182649956064786E7, 6815454.688141316],
+                                        [1.1829056194342554E7, 6814248.107000232],
+                                        [1.1829764138869673E7, 6812228.266846582],
+                                        [1.182877300969863E7, 6810128.149665862],
+                                        [1.1824265868598297E7, 6806866.452716261],
+                                        [1.1822752813478634E7, 6806336.133496404],
+                                        [1.1821619061332896E7, 6805977.181642801],
+                                        [1.182143958540611E7, 6805783.481569767]
+                                    ],
+                                    [
+                                        [1.1820320057406545E7, 6809515.241568118],
+                                        [1.182048262151818E7, 6809725.853456318],
+                                        [1.182165019729428E7, 6810424.157679409],
+                                        [1.1822214943731159E7, 6811155.8186073005],
+                                        [1.1820756974436417E7, 6812281.183176026],
+                                        [1.1817953348521143E7, 6811866.872175232],
+                                        [1.1816598632406399E7, 6811049.701237723],
+                                        [1.1817205032017693E7, 6810044.410556763],
+                                        [1.1820320057406545E7, 6809515.241568118]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 19,
+                                "Id": 19,
+                                "gridcode": 8,
+                                "Shape_Length": 12008.018465378951,
+                                "Shape_Area": 9755001.284215186
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1781882929423496E7, 6799066.313572735],
+                                        [1.178062777663821E7, 6799269.226883784],
+                                        [1.1779212234930918E7, 6800283.799133331],
+                                        [1.1778771756170347E7, 6802512.890258104],
+                                        [1.1781003392608628E7, 6802953.872956634],
+                                        [1.178240311009559E7, 6801127.675933883],
+                                        [1.1782038731656194E7, 6799283.690187022],
+                                        [1.1781882929423496E7, 6799066.313572735]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 20,
+                                "Id": 20,
+                                "gridcode": 7,
+                                "Shape_Length": 36318.45553120909,
+                                "Shape_Area": 3.091248033453159E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1783748809422687E7, 6796827.257573724],
+                                        [1.1781033381185964E7, 6797019.499927998],
+                                        [1.1777753309008226E7, 6799845.435773194],
+                                        [1.1776901004771173E7, 6802959.646889478],
+                                        [1.1778518141578987E7, 6804836.664770976],
+                                        [1.1781472370909661E7, 6804344.297486544],
+                                        [1.178383900292322E7, 6801483.211259156],
+                                        [1.1784442518415168E7, 6798716.301634878],
+                                        [1.1783748809422687E7, 6796827.257573724]
+                                    ],
+                                    [
+                                        [1.1781882929423496E7, 6799066.313572735],
+                                        [1.1782038731656194E7, 6799283.690187022],
+                                        [1.178240311009559E7, 6801127.675933883],
+                                        [1.1781003392608628E7, 6802953.872956634],
+                                        [1.1778771756170347E7, 6802512.890258104],
+                                        [1.1779212234930918E7, 6800283.799133331],
+                                        [1.178062777663821E7, 6799269.226883784],
+                                        [1.1781882929423496E7, 6799066.313572735]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 21,
+                                "Id": 21,
+                                "gridcode": 6,
+                                "Shape_Length": 57374.705867633944,
+                                "Shape_Area": 3.634283362604729E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1783375633422881E7, 6794961.377574533],
+                                        [1.1780944061747283E7, 6795603.747534826],
+                                        [1.1777731696619496E7, 6798371.351853192],
+                                        [1.1775803533309072E7, 6801827.244272426],
+                                        [1.1775639653834015E7, 6803866.769323409],
+                                        [1.1776389741238028E7, 6805547.75819841],
+                                        [1.1778518141578987E7, 6806329.368770331],
+                                        [1.1781277062221184E7, 6805610.781757459],
+                                        [1.1783767352630168E7, 6803465.275998026],
+                                        [1.178539967590636E7, 6800539.634468064],
+                                        [1.1785686453599215E7, 6796970.529688746],
+                                        [1.1784490321340576E7, 6795582.17215848],
+                                        [1.1783548344623566E7, 6795161.842373639],
+                                        [1.1783375633422881E7, 6794961.377574533]
+                                    ],
+                                    [
+                                        [1.1783748809422687E7, 6796827.257573724],
+                                        [1.1784442518415168E7, 6798716.301634878],
+                                        [1.178383900292322E7, 6801483.211259156],
+                                        [1.1781472370909661E7, 6804344.297486544],
+                                        [1.1778518141578987E7, 6804836.664770976],
+                                        [1.1776901004771173E7, 6802959.646889478],
+                                        [1.1777753309008226E7, 6799845.435773194],
+                                        [1.1781033381185964E7, 6797019.499927998],
+                                        [1.1783748809422687E7, 6796827.257573724]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 22,
+                                "Id": 22,
+                                "gridcode": 5,
+                                "Shape_Length": 74567.629818953,
+                                "Shape_Area": 4.3978894653307915E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1784495161422372E7, 6793468.673575193],
+                                        [1.1782132523899853E7, 6793777.806751698],
+                                        [1.1779659603690326E7, 6795326.712641865],
+                                        [1.1776140374530226E7, 6799216.959694713],
+                                        [1.1774246698226064E7, 6802611.035728261],
+                                        [1.177470923637119E7, 6806128.135252342],
+                                        [1.1776535319509655E7, 6807422.89129512],
+                                        [1.1778604403224826E7, 6807589.145257324],
+                                        [1.1781087248449132E7, 6806841.620249584],
+                                        [1.1783347865588918E7, 6805425.685641587],
+                                        [1.1786484862102032E7, 6801001.378270343],
+                                        [1.1787093169274956E7, 6797646.307601795],
+                                        [1.1786325782849312E7, 6795097.509145409],
+                                        [1.1784667872623116E7, 6793669.138374299],
+                                        [1.1784495161422372E7, 6793468.673575193]
+                                    ],
+                                    [
+                                        [1.1783375633422881E7, 6794961.377574533],
+                                        [1.1783548344623566E7, 6795161.842373639],
+                                        [1.1784490321340576E7, 6795582.17215848],
+                                        [1.1785686453599215E7, 6796970.529688746],
+                                        [1.178539967590636E7, 6800539.634468064],
+                                        [1.1783767352630168E7, 6803465.275998026],
+                                        [1.1781277062221184E7, 6805610.781757459],
+                                        [1.1778518141578987E7, 6806329.368770331],
+                                        [1.1776389741238028E7, 6805547.75819841],
+                                        [1.1775639653834015E7, 6803866.769323409],
+                                        [1.1775803533309072E7, 6801827.244272426],
+                                        [1.1777731696619496E7, 6798371.351853192],
+                                        [1.1780944061747283E7, 6795603.747534826],
+                                        [1.1783375633422881E7, 6794961.377574533]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 23,
+                                "Id": 23,
+                                "gridcode": 4,
+                                "Shape_Length": 91276.7241785429,
+                                "Shape_Area": 5.321697541406651E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1785241513422057E7, 6791975.969575852],
+                                        [1.1782151608057603E7, 6792199.319420472],
+                                        [1.1778776240363717E7, 6794832.022118181],
+                                        [1.1774424266591221E7, 6799947.880374834],
+                                        [1.1772750611863703E7, 6803971.764932856],
+                                        [1.177328929018952E7, 6806473.495017454],
+                                        [1.1775131943490326E7, 6808535.802618116],
+                                        [1.1779779219193876E7, 6808812.791957334],
+                                        [1.1782952137655094E7, 6806965.5206490755],
+                                        [1.1786751698657945E7, 6802609.162331909],
+                                        [1.1788009396756873E7, 6799585.324083835],
+                                        [1.178817793979308E7, 6796757.600255504],
+                                        [1.1787367448168397E7, 6794132.909316719],
+                                        [1.1786403024860337E7, 6793053.514136523],
+                                        [1.1785417606985807E7, 6792173.052011922],
+                                        [1.1785241513422057E7, 6791975.969575852]
+                                    ],
+                                    [
+                                        [1.1784495161422372E7, 6793468.673575193],
+                                        [1.1784667872623116E7, 6793669.138374299],
+                                        [1.1786325782849312E7, 6795097.509145409],
+                                        [1.1787093169274956E7, 6797646.307601795],
+                                        [1.1786484862102032E7, 6801001.378270343],
+                                        [1.1783347865588918E7, 6805425.685641587],
+                                        [1.1781087248449132E7, 6806841.620249584],
+                                        [1.1778604403224826E7, 6807589.145257324],
+                                        [1.1776535319509655E7, 6807422.89129512],
+                                        [1.177470923637119E7, 6806128.135252342],
+                                        [1.1774246698226064E7, 6802611.035728261],
+                                        [1.1776140374530226E7, 6799216.959694713],
+                                        [1.1779659603690326E7, 6795326.712641865],
+                                        [1.1782132523899853E7, 6793777.806751698],
+                                        [1.1784495161422372E7, 6793468.673575193]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 24,
+                                "Id": 24,
+                                "gridcode": 3,
+                                "Shape_Length": 111277.96727054685,
+                                "Shape_Area": 8.20063526394707E7
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1786361041421562E7, 6788990.561577156],
+                                        [1.1783867838422239E7, 6789255.900554836],
+                                        [1.1780683739372075E7, 6791312.035627663],
+                                        [1.1775290931635648E7, 6797324.590212643],
+                                        [1.1772120418979764E7, 6801932.09183231],
+                                        [1.1771394252968222E7, 6806102.414488316],
+                                        [1.1772130321217671E7, 6809192.567551047],
+                                        [1.1773744198088065E7, 6810046.551581189],
+                                        [1.1778153002962023E7, 6810814.24549441],
+                                        [1.178151439420797E7, 6809801.888294056],
+                                        [1.1783444092109054E7, 6808013.927917406],
+                                        [1.1787940866893008E7, 6802829.203838289],
+                                        [1.1789525925347045E7, 6798970.337598041],
+                                        [1.17890307678978E7, 6794717.260931939],
+                                        [1.1787501091367811E7, 6790565.922784954],
+                                        [1.1786361041421562E7, 6788990.561577156]
+                                    ],
+                                    [
+                                        [1.1785241513422057E7, 6791975.969575852],
+                                        [1.1785417606985807E7, 6792173.052011922],
+                                        [1.1786403024860337E7, 6793053.514136523],
+                                        [1.1787367448168397E7, 6794132.909316719],
+                                        [1.178817793979308E7, 6796757.600255504],
+                                        [1.1788009396756873E7, 6799585.324083835],
+                                        [1.1786751698657945E7, 6802609.162331909],
+                                        [1.1782952137655094E7, 6806965.5206490755],
+                                        [1.1779779219193876E7, 6808812.791957334],
+                                        [1.1775131943490326E7, 6808535.802618116],
+                                        [1.177328929018952E7, 6806473.495017454],
+                                        [1.1772750611863703E7, 6803971.764932856],
+                                        [1.1774424266591221E7, 6799947.880374834],
+                                        [1.1778776240363717E7, 6794832.022118181],
+                                        [1.1782151608057603E7, 6792199.319420472],
+                                        [1.1785241513422057E7, 6791975.969575852]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 25,
+                                "Id": 25,
+                                "gridcode": 2,
+                                "Shape_Length": 545576.5008211951,
+                                "Shape_Area": 1.065617312776705E9
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.179121232941939E7, 6782646.569579959],
+                                        [1.1789899101346865E7, 6782826.045506775],
+                                        [1.1789166973493412E7, 6783213.445652828],
+                                        [1.1783974382857814E7, 6785077.20740445],
+                                        [1.178035799332662E7, 6788427.973247334],
+                                        [1.1779076994504496E7, 6790289.565503478],
+                                        [1.1777225344345808E7, 6793289.197648376],
+                                        [1.1772388821444497E7, 6799232.111997828],
+                                        [1.177062357243982E7, 6802568.118438378],
+                                        [1.1769821095421225E7, 6805102.783855945],
+                                        [1.1768732589498848E7, 6806788.424903661],
+                                        [1.1764486459773645E7, 6808353.029741481],
+                                        [1.1761288418440819E7, 6810698.726977751],
+                                        [1.1758640895128027E7, 6813831.677751869],
+                                        [1.1757967130119577E7, 6817052.034708828],
+                                        [1.1758877691858664E7, 6818981.433663681],
+                                        [1.1760552051245183E7, 6820133.595202833],
+                                        [1.176288347024016E7, 6820226.000905424],
+                                        [1.1770343716063932E7, 6818665.16563721],
+                                        [1.1771846857557282E7, 6819257.551788181],
+                                        [1.1775718410505995E7, 6822770.101635382],
+                                        [1.1779945088796616E7, 6825149.366262406],
+                                        [1.1784038417139843E7, 6828942.042960674],
+                                        [1.1785144950943321E7, 6834039.713898256],
+                                        [1.178678048860322E7, 6838021.484050557],
+                                        [1.1789108613495514E7, 6845397.483980164],
+                                        [1.1782997768237889E7, 6846998.699766025],
+                                        [1.1779739835163668E7, 6847517.690347388],
+                                        [1.1778822130033284E7, 6848367.990221143],
+                                        [1.1777769210100457E7, 6849898.133676648],
+                                        [1.1776665033701494E7, 6853048.451803088],
+                                        [1.1775810622605324E7, 6857955.284010068],
+                                        [1.1777135765820354E7, 6860763.146420464],
+                                        [1.1781848997603133E7, 6863745.589157283],
+                                        [1.1784924989155933E7, 6864551.588047177],
+                                        [1.1787848250504524E7, 6864169.924821585],
+                                        [1.1791394783420026E7, 6861998.402199],
+                                        [1.1793131820442125E7, 6861929.553459153],
+                                        [1.179513778949079E7, 6862312.532048166],
+                                        [1.1799410328979895E7, 6863432.060047671],
+                                        [1.1803787465483427E7, 6862874.47408472],
+                                        [1.1806281200891748E7, 6861264.140438929],
+                                        [1.1807061672620922E7, 6859789.186727732],
+                                        [1.1807124081204891E7, 6858214.7095466405],
+                                        [1.1806750199122533E7, 6848781.868461698],
+                                        [1.1807656353540093E7, 6844977.666674554],
+                                        [1.1809304253338322E7, 6844400.082632527],
+                                        [1.1813174536477342E7, 6843871.147106633],
+                                        [1.1814443349681735E7, 6842695.528253436],
+                                        [1.1815109823249355E7, 6841436.016547397],
+                                        [1.1816470780222476E7, 6838552.264501736],
+                                        [1.1818049677537084E7, 6836107.211774841],
+                                        [1.182328575773105E7, 6834068.253298134],
+                                        [1.1826353680582836E7, 6832264.645221785],
+                                        [1.1827586352611884E7, 6829935.108164489],
+                                        [1.1827756575441122E7, 6825640.480819792],
+                                        [1.182618993776898E7, 6823214.415449038],
+                                        [1.1823694061336234E7, 6821300.481979072],
+                                        [1.1820715047939718E7, 6821182.401066154],
+                                        [1.181799243929933E7, 6822467.311813131],
+                                        [1.1813689743253589E7, 6826103.34068799],
+                                        [1.1810305916805059E7, 6826237.462201357],
+                                        [1.1807394932181537E7, 6824005.2050937265],
+                                        [1.1805959893485993E7, 6823502.229488835],
+                                        [1.1803017197785541E7, 6823100.058551997],
+                                        [1.179702112794967E7, 6820637.1345348805],
+                                        [1.179379233216779E7, 6819791.093933091],
+                                        [1.1792180209115297E7, 6819727.199159324],
+                                        [1.1787347233709186E7, 6820230.840987235],
+                                        [1.1786181565494716E7, 6818027.931857809],
+                                        [1.178654051734835E7, 6814919.181492627],
+                                        [1.1788033221347675E7, 6812098.228084549],
+                                        [1.1787239590290263E7, 6810301.851659805],
+                                        [1.1785501522615537E7, 6808691.448259875],
+                                        [1.178654051734835E7, 6807082.485496059],
+                                        [1.1789756182273075E7, 6802638.948764637],
+                                        [1.179078173296696E7, 6799712.948499218],
+                                        [1.1790492666200131E7, 6792419.907571375],
+                                        [1.1791018629346356E7, 6786930.981504947],
+                                        [1.1791524634273052E7, 6783537.605859727],
+                                        [1.179121232941939E7, 6782646.569579959]
+                                    ],
+                                    [
+                                        [1.179307820941858E7, 6824442.281561539],
+                                        [1.1793257685345367E7, 6824635.981634572],
+                                        [1.1795590553517804E7, 6826347.090053812],
+                                        [1.1796257317490295E7, 6827607.162639916],
+                                        [1.17972167469728E7, 6830070.983495697],
+                                        [1.1802105269435093E7, 6835521.299945012],
+                                        [1.180325907090789E7, 6838813.218934715],
+                                        [1.180370661334075E7, 6844414.312472969],
+                                        [1.1804452965340436E7, 6847262.672132343],
+                                        [1.1803997331429645E7, 6857384.221266463],
+                                        [1.1802651105387717E7, 6859468.956951991],
+                                        [1.1800810092020541E7, 6860443.128754169],
+                                        [1.1797748950977445E7, 6860564.461063191],
+                                        [1.1796243093344063E7, 6860087.703042522],
+                                        [1.1792320338024229E7, 6858712.793821827],
+                                        [1.1790638335579231E7, 6859506.598552719],
+                                        [1.1787475649620265E7, 6861931.873851329],
+                                        [1.1783168836657971E7, 6862102.579265222],
+                                        [1.1781422409877226E7, 6861278.3674322665],
+                                        [1.177881763729854E7, 6858864.916168779],
+                                        [1.1777971696345434E7, 6856451.35529165],
+                                        [1.1778524929081902E7, 6853406.556642368],
+                                        [1.177937903553769E7, 6851596.786003053],
+                                        [1.178074200541541E7, 6850125.771264315],
+                                        [1.1782286916814566E7, 6849308.281450838],
+                                        [1.178570655986835E7, 6848412.237109989],
+                                        [1.1790152636219203E7, 6848588.461640686],
+                                        [1.179172961458373E7, 6847127.312127456],
+                                        [1.1789295019280598E7, 6842526.356006622],
+                                        [1.1787885496357411E7, 6838504.831700221],
+                                        [1.1787301093494222E7, 6835443.858636454],
+                                        [1.1786554741494596E7, 6831876.558922946],
+                                        [1.1787120883013874E7, 6828674.286789224],
+                                        [1.1789020922602043E7, 6825442.327871516],
+                                        [1.1791018629346356E7, 6824621.757488325],
+                                        [1.179307820941858E7, 6824442.281561539]
+                                    ],
+                                    [
+                                        [1.1801661257414773E7, 6828920.393559575],
+                                        [1.1802199679500997E7, 6829501.499472886],
+                                        [1.1803141257623002E7, 6830373.918520406],
+                                        [1.1805213541486368E7, 6831712.098638117],
+                                        [1.1806318845339626E7, 6833314.441878319],
+                                        [1.1805041331376433E7, 6836959.319561511],
+                                        [1.1804358674853072E7, 6836932.263504341],
+                                        [1.1799590715980902E7, 6830869.078816757],
+                                        [1.1799657099126145E7, 6829194.293787777],
+                                        [1.1801661257414773E7, 6828920.393559575]
+                                    ],
+                                    [
+                                        [1.182293228940542E7, 6823695.929561853],
+                                        [1.1823108382969156E7, 6823893.011997938],
+                                        [1.1824340958196536E7, 6824676.923032254],
+                                        [1.1825106630663872E7, 6825533.868053615],
+                                        [1.1825720614968032E7, 6827762.768422186],
+                                        [1.182475807075055E7, 6830445.360974655],
+                                        [1.1821583637628436E7, 6832749.148796901],
+                                        [1.1815987927969381E7, 6833274.291976348],
+                                        [1.1813053619845927E7, 6835088.291993007],
+                                        [1.181181485500811E7, 6835440.479120538],
+                                        [1.1810690629282132E7, 6834182.240071267],
+                                        [1.1810845494816646E7, 6831583.927578211],
+                                        [1.1814154448047116E7, 6829657.455449313],
+                                        [1.1816219198465496E7, 6826812.389892653],
+                                        [1.1819423281359226E7, 6823949.572624266],
+                                        [1.182293228940542E7, 6823695.929561853]
+                                    ],
+                                    [
+                                        [1.1768075417429611E7, 6811754.297567129],
+                                        [1.1768248128630355E7, 6811954.76236625],
+                                        [1.1768649058228552E7, 6812300.184767708],
+                                        [1.1769367656629845E7, 6813678.0478618145],
+                                        [1.17671469530821E7, 6815591.292331919],
+                                        [1.1763737007274538E7, 6816031.9447660595],
+                                        [1.1763051418230996E7, 6814583.65563485],
+                                        [1.1765192482503623E7, 6811995.259615228],
+                                        [1.1768075417429611E7, 6811754.297567129]
+                                    ],
+                                    [
+                                        [1.1786361041421562E7, 6788990.561577156],
+                                        [1.1787501091367811E7, 6790565.922784954],
+                                        [1.17890307678978E7, 6794717.260931939],
+                                        [1.1789525925347045E7, 6798970.337598041],
+                                        [1.1787940866893008E7, 6802829.203838289],
+                                        [1.1783444092109054E7, 6808013.927917406],
+                                        [1.178151439420797E7, 6809801.888294056],
+                                        [1.1778153002962023E7, 6810814.24549441],
+                                        [1.1773744198088065E7, 6810046.551581189],
+                                        [1.1772130321217671E7, 6809192.567551047],
+                                        [1.1771394252968222E7, 6806102.414488316],
+                                        [1.1772120418979764E7, 6801932.09183231],
+                                        [1.1775290931635648E7, 6797324.590212643],
+                                        [1.1780683739372075E7, 6791312.035627663],
+                                        [1.1783867838422239E7, 6789255.900554836],
+                                        [1.1786361041421562E7, 6788990.561577156]
+                                    ]
+                                ]
+                            }
+                        }, {
+                            "attributes": {
+                                "OBJECTID": 26,
+                                "Id": 26,
+                                "gridcode": 1,
+                                "Shape_Length": 1013760.5442678179,
+                                "Shape_Area": 4.066231421828635E9
+                            },
+                            "geometry": {
+                                "rings": [
+                                    [
+                                        [1.1809871129411161E7, 6778541.633581772],
+                                        [1.1784589594265088E7, 6778725.129623562],
+                                        [1.1781158967072785E7, 6782295.783229053],
+                                        [1.1776983129570648E7, 6786307.863681734],
+                                        [1.1776468144868731E7, 6787307.539867818],
+                                        [1.1773626196894169E7, 6793596.343544275],
+                                        [1.1770870504871175E7, 6797010.115863547],
+                                        [1.176909943922709E7, 6799993.58782953],
+                                        [1.1767963161697477E7, 6800016.774668381],
+                                        [1.17658164800829E7, 6796400.5502693355],
+                                        [1.1763265179019481E7, 6794464.642828047],
+                                        [1.1760121572947666E7, 6793658.99128519],
+                                        [1.1756912510463893E7, 6794264.234971076],
+                                        [1.1754495543023378E7, 6795848.86635904],
+                                        [1.1752651641266137E7, 6798278.911985293],
+                                        [1.1751845992570415E7, 6801422.516633585],
+                                        [1.1752451234832749E7, 6804631.581964433],
+                                        [1.1753331234302446E7, 6805973.799279749],
+                                        [1.1755197114301637E7, 6808285.262902275],
+                                        [1.1754831400569052E7, 6809332.3832782805],
+                                        [1.1753364243660256E7, 6811496.805216163],
+                                        [1.1752612247271061E7, 6813693.815140009],
+                                        [1.1752136747671634E7, 6816481.5485043675],
+                                        [1.1752249616955295E7, 6822012.133439451],
+                                        [1.1751078673051715E7, 6822036.026360825],
+                                        [1.1745977470989764E7, 6819408.135273844],
+                                        [1.174151417604798E7, 6819833.043206647],
+                                        [1.1738814985751837E7, 6821602.708074138],
+                                        [1.1736923851157904E7, 6824392.605239779],
+                                        [1.1736816781742454E7, 6829639.003349274],
+                                        [1.1737630060773775E7, 6831315.354287073],
+                                        [1.1739892466074705E7, 6834118.034962863],
+                                        [1.173995521880269E7, 6837192.907602668],
+                                        [1.1739174263955057E7, 6838802.633391142],
+                                        [1.1736919464388952E7, 6840280.9452649355],
+                                        [1.1736545777199924E7, 6858591.61668013],
+                                        [1.1736911915284902E7, 6868305.484301925],
+                                        [1.1739066611638948E7, 6869350.831997976],
+                                        [1.1741560492071822E7, 6870863.185305834],
+                                        [1.174496517642577E7, 6871443.917358413],
+                                        [1.1747748520974785E7, 6870540.712721556],
+                                        [1.174993621018231E7, 6869413.721387133],
+                                        [1.1750376542316943E7, 6870193.805197954],
+                                        [1.175145291386953E7, 6873510.787581369],
+                                        [1.1765159567100376E7, 6873790.515192434],
+                                        [1.1766026681987688E7, 6871652.777386144],
+                                        [1.1766424915375665E7, 6867174.665388107],
+                                        [1.1767146209987178E7, 6867540.37769711],
+                                        [1.1770040188840985E7, 6869031.215773761],
+                                        [1.1774053772566125E7, 6869113.12561664],
+                                        [1.1778045661336496E7, 6867746.774443522],
+                                        [1.1783452533781096E7, 6871635.383164272],
+                                        [1.17885874221005E7, 6871740.176807091],
+                                        [1.1790921326619864E7, 6870607.8845154345],
+                                        [1.1791775823129237E7, 6869786.897386953],
+                                        [1.1793883673052385E7, 6867593.013586536],
+                                        [1.179661965170692E7, 6868294.193387613],
+                                        [1.1799196124042735E7, 6868922.289377302],
+                                        [1.1798179792281091E7, 6873884.369783297],
+                                        [1.1813839034152731E7, 6873517.583937019],
+                                        [1.181376352887687E7, 6869817.7892089635],
+                                        [1.181452463458468E7, 6869025.618361533],
+                                        [1.1816292352031037E7, 6867327.224765971],
+                                        [1.181778692373252E7, 6865311.055244923],
+                                        [1.1819013941407144E7, 6865286.014227703],
+                                        [1.1822950283121258E7, 6865366.347485125],
+                                        [1.18255698720444E7, 6864333.123126283],
+                                        [1.1827876871403247E7, 6862116.594149098],
+                                        [1.182869039234966E7, 6860537.400735348],
+                                        [1.1829459139692456E7, 6857537.797061518],
+                                        [1.1828444225790039E7, 6853849.213439792],
+                                        [1.1825859411431E7, 6851158.900956869],
+                                        [1.1822749892346919E7, 6849650.32148926],
+                                        [1.1822727320483148E7, 6848544.510850951],
+                                        [1.1823861499694943E7, 6845748.378521144],
+                                        [1.1823406714221984E7, 6841755.56159395],
+                                        [1.1821256727116257E7, 6838210.227310404],
+                                        [1.1821995619695768E7, 6838059.472998336],
+                                        [1.1826122973813936E7, 6837483.289732903],
+                                        [1.1827919822858438E7, 6836611.551143929],
+                                        [1.183057866769196E7, 6834056.978754684],
+                                        [1.1830212951112285E7, 6823878.787851691],
+                                        [1.1829600555493817E7, 6822089.620301709],
+                                        [1.183057866769196E7, 6820190.93024224],
+                                        [1.1830204842551738E7, 6804887.861447856],
+                                        [1.1824379747181386E7, 6801887.056294858],
+                                        [1.1819084936865583E7, 6801779.002892584],
+                                        [1.1814539559119195E7, 6802615.215281233],
+                                        [1.1808896240138054E7, 6803167.161125362],
+                                        [1.1805086087897435E7, 6805428.965508774],
+                                        [1.180297973555252E7, 6808536.35495688],
+                                        [1.180287622043866E7, 6813608.447485745],
+                                        [1.1804404131762356E7, 6817139.833792403],
+                                        [1.1799341167058289E7, 6817243.160997212],
+                                        [1.1798119815126434E7, 6816415.2678550035],
+                                        [1.1795100947927102E7, 6814703.712439984],
+                                        [1.1795221807616383E7, 6808781.564888507],
+                                        [1.179444348260583E7, 6807177.265685841],
+                                        [1.1792714548450127E7, 6804326.241134375],
+                                        [1.179399403261128E7, 6799905.065580785],
+                                        [1.179406065491353E7, 6796640.669573814],
+                                        [1.1794000694841534E7, 6793702.711459249],
+                                        [1.1794380595707923E7, 6792532.00386551],
+                                        [1.1795816744775161E7, 6790413.329241812],
+                                        [1.1797784915632188E7, 6786941.823288158],
+                                        [1.18003514117053E7, 6787587.1656280905],
+                                        [1.179998569512561E7, 6788807.703287318],
+                                        [1.1797763237760022E7, 6792472.556272775],
+                                        [1.1797696626846239E7, 6795736.462577373],
+                                        [1.1798453849100187E7, 6798069.934336454],
+                                        [1.1799944674008936E7, 6800343.821841702],
+                                        [1.1803052735374272E7, 6802228.6294077635],
+                                        [1.1807634459287792E7, 6802322.134093627],
+                                        [1.1809984074143171E7, 6801182.220808491],
+                                        [1.181184522794488E7, 6799394.049745917],
+                                        [1.181303799492307E7, 6797078.685586914],
+                                        [1.181313425560847E7, 6792361.820895746],
+                                        [1.1812001966875687E7, 6790027.916376397],
+                                        [1.181088426671882E7, 6788864.599872261],
+                                        [1.1809688271121323E7, 6788053.8918675035],
+                                        [1.180717553981556E7, 6786562.2697687745],
+                                        [1.180964562145947E7, 6782918.280382946],
+                                        [1.1809871129411161E7, 6778541.633581772]
+                                    ],
+                                    [
+                                        [1.175314837743622E7, 6862506.233544767],
+                                        [1.1753426353297934E7, 6863065.456594184],
+                                        [1.1753119248685166E7, 6863694.291408122],
+                                        [1.1752276661624044E7, 6862947.219090387],
+                                        [1.175314837743622E7, 6862506.233544767]
+                                    ],
+                                    [
+                                        [1.176434365743123E7, 6859520.825546086],
+                                        [1.1764587036673114E7, 6861002.395933762],
+                                        [1.1764502671200514E7, 6861573.293545172],
+                                        [1.1764765786587656E7, 6863353.788807452],
+                                        [1.176392569643934E7, 6863788.326367661],
+                                        [1.1762320580117002E7, 6862820.1100014],
+                                        [1.1761942037320599E7, 6862088.272552878],
+                                        [1.17630558511765E7, 6860241.784199014],
+                                        [1.176434365743123E7, 6859520.825546086]
+                                    ],
+                                    [
+                                        [1.1814349241409227E7, 6819217.817563847],
+                                        [1.181467870862338E7, 6820074.956188455],
+                                        [1.1813701256954044E7, 6821737.786215425],
+                                        [1.1812357308597684E7, 6822369.172037169],
+                                        [1.1810444252036631E7, 6820971.726541579],
+                                        [1.180970518293652E7, 6819798.433774754],
+                                        [1.1814349241409227E7, 6819217.817563847]
+                                    ],
+                                    [
+                                        [1.179121232941939E7, 6782646.569579959],
+                                        [1.1791524634273052E7, 6783537.605859727],
+                                        [1.1791018629346356E7, 6786930.981504947],
+                                        [1.1790492666200131E7, 6792419.907571375],
+                                        [1.179078173296696E7, 6799712.948499218],
+                                        [1.1789756182273075E7, 6802638.948764637],
+                                        [1.178654051734835E7, 6807082.485496059],
+                                        [1.1785501522615537E7, 6808691.448259875],
+                                        [1.1787239590290263E7, 6810301.851659805],
+                                        [1.1788033221347675E7, 6812098.228084549],
+                                        [1.178654051734835E7, 6814919.181492627],
+                                        [1.1786181565494716E7, 6818027.931857809],
+                                        [1.1787347233709186E7, 6820230.840987235],
+                                        [1.1792180209115297E7, 6819727.199159324],
+                                        [1.179379233216779E7, 6819791.093933091],
+                                        [1.179702112794967E7, 6820637.1345348805],
+                                        [1.1803017197785541E7, 6823100.058551997],
+                                        [1.1805959893485993E7, 6823502.229488835],
+                                        [1.1807394932181537E7, 6824005.2050937265],
+                                        [1.1810305916805059E7, 6826237.462201357],
+                                        [1.1813689743253589E7, 6826103.34068799],
+                                        [1.181799243929933E7, 6822467.311813131],
+                                        [1.1820715047939718E7, 6821182.401066154],
+                                        [1.1823694061336234E7, 6821300.481979072],
+                                        [1.182618993776898E7, 6823214.415449038],
+                                        [1.1827756575441122E7, 6825640.480819792],
+                                        [1.1827586352611884E7, 6829935.108164489],
+                                        [1.1826353680582836E7, 6832264.645221785],
+                                        [1.182328575773105E7, 6834068.253298134],
+                                        [1.1818049677537084E7, 6836107.211774841],
+                                        [1.1816470780222476E7, 6838552.264501736],
+                                        [1.1815109823249355E7, 6841436.016547397],
+                                        [1.1814443349681735E7, 6842695.528253436],
+                                        [1.1813174536477342E7, 6843871.147106633],
+                                        [1.1809304253338322E7, 6844400.082632527],
+                                        [1.1807656353540093E7, 6844977.666674554],
+                                        [1.1806750199122533E7, 6848781.868461698],
+                                        [1.1807124081204891E7, 6858214.7095466405],
+                                        [1.1807061672620922E7, 6859789.186727732],
+                                        [1.1806281200891748E7, 6861264.140438929],
+                                        [1.1803787465483427E7, 6862874.47408472],
+                                        [1.1799410328979895E7, 6863432.060047671],
+                                        [1.179513778949079E7, 6862312.532048166],
+                                        [1.1793131820442125E7, 6861929.553459153],
+                                        [1.1791394783420026E7, 6861998.402199],
+                                        [1.1787848250504524E7, 6864169.924821585],
+                                        [1.1784924989155933E7, 6864551.588047177],
+                                        [1.1781848997603133E7, 6863745.589157283],
+                                        [1.1777135765820354E7, 6860763.146420464],
+                                        [1.1775810622605324E7, 6857955.284010068],
+                                        [1.1776665033701494E7, 6853048.451803088],
+                                        [1.1777769210100457E7, 6849898.133676648],
+                                        [1.1778822130033284E7, 6848367.990221143],
+                                        [1.1779739835163668E7, 6847517.690347388],
+                                        [1.1782997768237889E7, 6846998.699766025],
+                                        [1.1789108613495514E7, 6845397.483980164],
+                                        [1.178678048860322E7, 6838021.484050557],
+                                        [1.1785144950943321E7, 6834039.713898256],
+                                        [1.1784038417139843E7, 6828942.042960674],
+                                        [1.1779945088796616E7, 6825149.366262406],
+                                        [1.1775718410505995E7, 6822770.101635382],
+                                        [1.1771846857557282E7, 6819257.551788181],
+                                        [1.1770343716063932E7, 6818665.16563721],
+                                        [1.176288347024016E7, 6820226.000905424],
+                                        [1.1760552051245183E7, 6820133.595202833],
+                                        [1.1758877691858664E7, 6818981.433663681],
+                                        [1.1757967130119577E7, 6817052.034708828],
+                                        [1.1758640895128027E7, 6813831.677751869],
+                                        [1.1761288418440819E7, 6810698.726977751],
+                                        [1.1764486459773645E7, 6808353.029741481],
+                                        [1.1768732589498848E7, 6806788.424903661],
+                                        [1.1769821095421225E7, 6805102.783855945],
+                                        [1.177062357243982E7, 6802568.118438378],
+                                        [1.1772388821444497E7, 6799232.111997828],
+                                        [1.1777225344345808E7, 6793289.197648376],
+                                        [1.1779076994504496E7, 6790289.565503478],
+                                        [1.178035799332662E7, 6788427.973247334],
+                                        [1.1783974382857814E7, 6785077.20740445],
+                                        [1.1789166973493412E7, 6783213.445652828],
+                                        [1.1789899101346865E7, 6782826.045506775],
+                                        [1.179121232941939E7, 6782646.569579959]
+                                    ],
+                                    [
+                                        [1.174941661743784E7, 6851310.953549698],
+                                        [1.174974422264409E7, 6852203.056070998],
+                                        [1.174879521926722E7, 6856553.900965601],
+                                        [1.1746631674950048E7, 6855961.776748449],
+                                        [1.1743542373172268E7, 6855259.942112759],
+                                        [1.1742899914951682E7, 6854416.547896877],
+                                        [1.1746173489319652E7, 6852955.8169083595],
+                                        [1.1748173545638964E7, 6851537.704263553],
+                                        [1.174941661743784E7, 6851310.953549698]
+                                    ],
+                                    [
+                                        [1.1813229713409662E7, 6851684.129549518],
+                                        [1.1813412571699515E7, 6851874.448683068],
+                                        [1.1814809407914221E7, 6853216.509407535],
+                                        [1.1814139586148933E7, 6854516.750401795],
+                                        [1.1812075570284113E7, 6854474.627454728],
+                                        [1.1811180975120693E7, 6851970.135676429],
+                                        [1.1813229713409662E7, 6851684.129549518]
+                                    ],
+                                    [
+                                        [1.175128249743703E7, 6834891.209556922],
+                                        [1.1751634681717396E7, 6835285.377276182],
+                                        [1.1752817183451623E7, 6836341.930117443],
+                                        [1.1753949539091393E7, 6837609.271367565],
+                                        [1.1755386100989133E7, 6840739.261150494],
+                                        [1.175518369731021E7, 6844135.133708492],
+                                        [1.1753521611801714E7, 6846514.594785869],
+                                        [1.1749603793365315E7, 6847724.39031069],
+                                        [1.1746009495960325E7, 6846956.457240447],
+                                        [1.174413366745773E7, 6844857.020518303],
+                                        [1.1743642885300085E7, 6841979.905078888],
+                                        [1.1744487480995104E7, 6838826.41242823],
+                                        [1.174774919929804E7, 6835086.711848646],
+                                        [1.175128249743703E7, 6834891.209556922]
+                                    ],
+                                    [
+                                        [1.1768821769429296E7, 6823695.929561853],
+                                        [1.1769545287631348E7, 6824505.692327127],
+                                        [1.1772954396389484E7, 6825816.238424942],
+                                        [1.1774376839483961E7, 6826589.210874438],
+                                        [1.1775258779257074E7, 6827576.280071005],
+                                        [1.1774870428177282E7, 6828723.31112349],
+                                        [1.1772907985699415E7, 6827656.901598021],
+                                        [1.1768859866567105E7, 6827251.595996469],
+                                        [1.1766569884366423E7, 6828073.268210009],
+                                        [1.1764417155496687E7, 6829576.97912477],
+                                        [1.1762702377156615E7, 6832273.206472322],
+                                        [1.1762301683868304E7, 6836858.104910061],
+                                        [1.1764232571860075E7, 6840411.39401038],
+                                        [1.1767883710331425E7, 6843061.139490172],
+                                        [1.1768251510993406E7, 6848149.451987237],
+                                        [1.1768809210840598E7, 6849703.755992174],
+                                        [1.1770884731864512E7, 6852233.397689566],
+                                        [1.1771236918992043E7, 6853414.176924065],
+                                        [1.176840787410608E7, 6854712.6128525585],
+                                        [1.1765358391965896E7, 6857306.758604601],
+                                        [1.1764875653597057E7, 6856254.963279024],
+                                        [1.1764925663030386E7, 6855415.889547884],
+                                        [1.1764798021532387E7, 6853274.348384857],
+                                        [1.176294149427946E7, 6849857.898361504],
+                                        [1.1759200559479043E7, 6847478.69637084],
+                                        [1.1759461476899624E7, 6843101.08155331],
+                                        [1.175927532877773E7, 6839977.933368355],
+                                        [1.1757103323570535E7, 6835980.9283468425],
+                                        [1.175889806860298E7, 6832678.170421064],
+                                        [1.1759313864370078E7, 6827366.4454429895],
+                                        [1.1761928507868499E7, 6826878.419996619],
+                                        [1.1763547159337208E7, 6826444.899565339],
+                                        [1.1766826030035794E7, 6823903.905029073],
+                                        [1.1768821769429296E7, 6823695.929561853]
+                                    ],
+                                    [
+                                        [1.182143958540611E7, 6805783.481569767],
+                                        [1.1821619061332896E7, 6805977.181642801],
+                                        [1.1822752813478634E7, 6806336.133496404],
+                                        [1.1824265868598297E7, 6806866.452716261],
+                                        [1.182877300969863E7, 6810128.149665862],
+                                        [1.1829764138869673E7, 6812228.266846582],
+                                        [1.1829056194342554E7, 6814248.107000232],
+                                        [1.182649956064786E7, 6815454.688141316],
+                                        [1.1821375092739835E7, 6816067.903726593],
+                                        [1.1814646906438977E7, 6815288.525286511],
+                                        [1.1811257448412895E7, 6813896.278608173],
+                                        [1.1809691653484374E7, 6811078.303273976],
+                                        [1.1810868095151484E7, 6808855.043024227],
+                                        [1.1812055344436452E7, 6807754.994930357],
+                                        [1.1816473951899588E7, 6806034.362938419],
+                                        [1.182143958540611E7, 6805783.481569767]
+                                    ]
+                                ]
+                            }
+                        }],
+                        "exceededTransferLimit": false
+                    },
+                    "category": "",
+                    "label": "OutputFeatures",
+                    "visible": true,
+                    "required": false,
+                    "featureSetMode": "draw"
+                }],
+                "shareResults": true,
+                "layerOrder": ["InputFeatures", "Operational Layers", "OutputFeatures"],
+                "useResultMapServer": false
+            }
+        }, {
+            "position": {
+                "left": 105,
+                "bottom": 55,
+                "width": 380,
+                "height": 410
+            },
+            "placeholderIndex": 1,
+            "id": "_6",
+            "positionRelativeTo": "map",
+            "name": "Edit",
+            "label": "Edit",
+            "uri": "widgets/Edit/Widget",
+            "config": {
+                "editor": {
+                    "enableUndoRedo": true,
+                    "toolbarVisible": true,
+                    "toolbarOptions": {
+                        "mergeVisible": true,
+                        "cutVisible": true,
+                        "reshapeVisible": true
+                    },
+                    "layerInfos": [{
+                        "featureLayer": {
+                            "url": "https://services.arcgis.com/hRUr1F8lE8Jq2uJo/ArcGIS/rest/services/Trailsconditions/FeatureServer/0"
+                        },
+                        "disableGeometryUpdate": false,
+                        "fieldInfos": [{
+                            "fieldName": "OBJECTID",
+                            "label": "OBJECTID",
+                            "isEditable": true
+                        }, {
+                            "fieldName": "Name",
+                            "label": "Name",
+                            "isEditable": true
+                        }, {
+                            "fieldName": "Quality",
+                            "label": "Quality",
+                            "isEditable": true
+                        }, {
+                            "fieldName": "Comments",
+                            "label": "Comments",
+                            "isEditable": true
+                        }, {
+                            "fieldName": "Zip",
+                            "label": "Zip",
+                            "isEditable": true
+                        }, {
+                            "fieldName": "email",
+                            "label": "email",
+                            "isEditable": true
+                        }, {
+                            "fieldName": "Condition",
+                            "label": "Condition",
+                            "isEditable": true
+                        }]
+                    }]
+                }
+            }
+        }, {
+            "position": {
+                "left": 155,
+                "bottom": 55,
+                "width": 380,
+                "height": 410
+            },
+            "placeholderIndex": 1,
+            "id": "_7",
+            "positionRelativeTo": "map",
+            "name": "Print",
+            "label": "Print",
+            "uri": "widgets/Print/Widget",
+            "config": {
+                "serviceURL": "https://gleneagle.esri.com/portal/sharing/tools/newPrint",
+                "defaultTitle": "ArcGIS Web Map",
+                "defaultAuthor": "Web AppBuilder for ArcGIS",
+                "defaultCopyright": "",
+                "defaultFormat": "",
+                "defaultLayout": ""
+            }
+        }, {
+            "uri": "widgets/OverviewMap/Widget",
+            "position": {
+                "right": 0,
+                "bottom": 0
+            },
+            "id": "widgets/OverviewMap/Widget_8",
+            "positionRelativeTo": "map",
+            "name": "OverviewMap",
+            "label": "Overview Map"
+        }, {
+            "uri": "widgets/HomeButton/Widget",
+            "position": {
+                "left": 7,
+                "top": 75
+            },
+            "id": "widgets/HomeButton/Widget_9",
+            "positionRelativeTo": "map",
+            "name": "HomeButton",
+            "label": "Home Button"
+        }, {
+            "uri": "widgets/MyLocation/Widget",
+            "position": {
+                "left": 7,
+                "top": 110
+            },
+            "id": "widgets/MyLocation/Widget_10",
+            "positionRelativeTo": "map",
+            "name": "MyLocation",
+            "label": "My Location"
+        }, {
+            "uri": "widgets/AttributeTable/Widget",
+            "positionRelativeTo": "browser",
+            "id": "widgets/AttributeTable/Widget_11",
+            "position": {
+                "left": 0,
+                "top": 0
+            },
+            "name": "AttributeTable",
+            "label": "Attribute Table"
+        }, {
+            "uri": "widgets/Splash/Widget",
+            "visible": false,
+            "positionRelativeTo": "browser",
+            "id": "widgets/Splash/Widget_12",
+            "position": {
+                "left": 0,
+                "top": 0
+            },
+            "name": "Splash",
+            "label": "Splash"
+        }]
+    },
+    "map": {
+        "3D": false,
+        "2D": true,
+        "position": {
+            "left": 0,
+            "top": 40,
+            "right": 0,
+            "bottom": 0
+        },
+        "itemId": "c36bdb6179894173887a72abc116aa5f",
+        "id": "map",
+        "portalUrl": "https://gleneagle.esri.com/portal/"
+    },
+    "widgetPool": {
+        "panel": {
+            "uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
+            "positionRelativeTo": "map",
+            "position": {
+                "top": 5,
+                "right": 5,
+                "bottom": 5
+            }
+        },
+        "widgets": [{
+            "uri": "widgets/Legend/Widget",
+            "id": "widgets/Legend/Widget_13",
+            "name": "Legend",
+            "index": 2,
+            "label": "Legend"
+        }, {
+            "uri": "widgets/LayerList/Widget",
+            "id": "widgets/LayerList/Widget_14",
+            "name": "LayerList",
+            "index": 3,
+            "label": "Layer List"
+        }, {
+            "name": "BasemapGallery",
+            "label": "Basemap Gallery",
+            "uri": "widgets/BasemapGallery/Widget",
+            "config": {
+                "basemapGallery": {
+                    "basemaps": [{
+                        "layers": [{
+                            "id": "World_Imagery_2017",
+                            "visibility": true,
+                            "opacity": 1,
+                            "url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+                        }],
+                        "title": "Imagery",
+                        "thumbnailUrl": "https://gleneagle.esri.com/portal/sharing/rest/content/items/d0135822507947b2a3809af36f2d91e6/info/thumbnail/tempimagery.jpg",
+                        "spatialReference": {
+                            "wkid": "102100"
+                        }
+                    }, {
+                        "layers": [{
+                            "id": "World_Imagery_6611",
+                            "opacity": 1,
+                            "visibility": true,
+                            "url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+                        }, {
+                            "id": "World_Boundaries_and_Places_1145",
+                            "isReference": true,
+                            "opacity": 1,
+                            "visibility": true,
+                            "url": "http://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer"
+                        }],
+                        "title": "Imagery with Labels",
+                        "thumbnailUrl": "https://gleneagle.esri.com/portal/sharing/rest/content/items/30699b07b44f47ef929b9e216594a7db/info/thumbnail/tempimagery_with_labels_ne_usa.png",
+                        "spatialReference": {
+                            "wkid": "102100"
+                        }
+                    }, {
+                        "layers": [{
+                            "id": "World_Light_Gray_Base_1486",
+                            "opacity": 1,
+                            "visibility": true,
+                            "url": "http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer"
+                        }, {
+                            "id": "World_Light_Gray_Reference_8656",
+                            "isReference": true,
+                            "opacity": 1,
+                            "visibility": true,
+                            "url": "http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer"
+                        }],
+                        "title": "Light Gray Canvas",
+                        "thumbnailUrl": "https://gleneagle.esri.com/portal/sharing/rest/content/items/a9bfcd532c964b96ba617a0874423805/info/thumbnail/templight_gray_canvas_with_labels__ne_usa.png",
+                        "spatialReference": {
+                            "wkid": "102100"
+                        }
+                    }, {
+                        "layers": [{
+                            "id": "NatGeo_World_Map_2536",
+                            "opacity": 1,
+                            "visibility": true,
+                            "url": "http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer"
+                        }],
+                        "title": "National Geographic",
+                        "thumbnailUrl": "https://gleneagle.esri.com/portal/sharing/rest/content/items/7634c349af5c4ca6ac70078db97d80fd/info/thumbnail/natgeo.jpg",
+                        "spatialReference": {
+                            "wkid": "102100"
+                        }
+                    }, {
+                        "layers": [{
+                            "id": "Ocean_Basemap_2089",
+                            "opacity": 1,
+                            "visibility": true,
+                            "url": "http://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer"
+                        }, {
+                            "url": "http://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Reference/MapServer",
+                            "id": "World_Ocean_Reference_1261",
+                            "isReference": true,
+                            "visibility": true,
+                            "opacity": 1
+                        }],
+                        "title": "Oceans",
+                        "thumbnailUrl": "https://gleneagle.esri.com/portal/sharing/rest/content/items/b548883bdf3e482d8e28e2b8717a3d84/info/thumbnail/tempoceans.jpg",
+                        "spatialReference": {
+                            "wkid": "102100"
+                        }
+                    }, {
+                        "layers": [{
+                            "visibility": true,
+                            "opacity": 1,
+                            "type": "OpenStreetMap"
+                        }],
+                        "title": "OpenStreetMap",
+                        "thumbnailUrl": "https://gleneagle.esri.com/portal/sharing/rest/content/items/cb4f9f9b2242489c883a48ac7320b51b/info/thumbnail/temposm.jpg",
+                        "spatialReference": {
+                            "wkid": "102100"
+                        }
+                    }, {
+                        "layers": [{
+                            "id": "World_Street_Map_8421",
+                            "opacity": 1,
+                            "visibility": true,
+                            "url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer"
+                        }],
+                        "title": "Streets",
+                        "thumbnailUrl": "https://gleneagle.esri.com/portal/sharing/rest/content/items/dbf4603731084f8bb2d1d6198c20bef4/info/thumbnail/world_street_map.jpg",
+                        "spatialReference": {
+                            "wkid": "102100"
+                        }
+                    }, {
+                        "layers": [{
+                            "id": "World_Terrain_Base_3",
+                            "layerType": "ArcGISTiledMapServiceLayer",
+                            "opacity": 1,
+                            "visibility": true,
+                            "url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer"
+                        }, {
+                            "id": "World_Reference_Overlay_5790",
+                            "layerType": "ArcGISTiledMapServiceLayer",
+                            "isReference": true,
+                            "opacity": 1,
+                            "visibility": true,
+                            "url": "http://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Reference_Overlay/MapServer"
+                        }],
+                        "title": "Terrain with Labels",
+                        "thumbnailUrl": "https://gleneagle.esri.com/portal/sharing/rest/content/items/dc3aa6bfb50a4609bdd396daef45998c/info/thumbnail/tempTerrain_with_labels_ne_usa.png",
+                        "spatialReference": {
+                            "wkid": 102100,
+                            "latestWkid": 3857
+                        }
+                    }, {
+                        "layers": [{
+                            "id": "defaultBasemap",
+                            "opacity": 1,
+                            "visibility": true,
+                            "url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"
+                        }],
+                        "title": "Topographic",
+                        "thumbnailUrl": "https://gleneagle.esri.com/portal/sharing/rest/content/items/9d98f7113f9b469c8c302b210db7b922/info/thumbnail/topo_map_2.jpg",
+                        "spatialReference": {
+                            "wkid": "102100"
+                        }
+                    }]
+                }
+            },
+            "index": 5,
+            "id": "widgets/BasemapGallery/Widget_15"
+        }],
+        "groups": []
+    },
+    "wabVersion": "1.0",
+    "_buildInfo": {
+        "widgetManifestsMerged": true
+    },
+    "isWebTier": true,
+    "httpProxy": {
+        "useProxy": true,
+        "alwaysUseProxy": false,
+        "url": "https://iwilson2.esri.com:8443/proxy/proxy.jsp",
+        "rules": []
+    }
+}

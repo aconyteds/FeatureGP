@@ -1,0 +1,33 @@
+<div>
+    <div data-dojo-type="dijit/Dialog" title="Saving Output to Portal..." data-dojo-attach-point="dialogNode">
+        <p>Please fill out the following form to save your output to Portal:</p>
+        <div data-dojo-type="dijit/form/Form" action="" method="" data-dojo-attach-point="form">
+            <script type="dojo/on" data-dojo-event="submit">
+                if(this.validate()){
+                    return true;
+                }else{
+                    alert('Form contains invalid data.  Please correct first');
+                    return false;
+                }
+            </script>
+            <table style="width:100%;">
+                <tr>
+                    <td><label for="title">Title:</label></td>
+                    <td><input label="title" data-dojo-type="dijit/form/TextBox" name="title" value="${resultLayer.name}" /></td>
+                </tr>
+                <tr>
+                    <td><label for="snippet">Summary:</label></td>
+                    <td><input data-dojo-type="dijit/form/TextBox" name="snippet" value="Feature Collection Output from Tool."></td>
+                </tr>
+                <tr>
+                    <td><label for="tags">Tags:</label></td>
+                    <td><input data-dojo-type="dijit/form/TextBox" name="tags" value="Feature Collection"/></td>
+                </tr>
+            </table>
+            <div style="text-align:center;">
+                <button type="submit" data-dojo-type="dijit/form/Button">Save</button>
+                <button type="cancel" data-dojo-type="dijit/form/Button" data-dojo-attach-event="onClick:_hideDialog">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
