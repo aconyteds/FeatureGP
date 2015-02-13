@@ -18,8 +18,7 @@ define(["dojo/_base/declare", "dijit/_WidgetBase", 'dijit/_TemplatedMixin', 'dij
                 new this._addFC({
                     results: this.results,
                     map: this.map,
-                    portalUrl:this.portalUrl,
-                    outRenderer:this.renderer
+                    portalUrl:this.portalUrl
                 });
             },
             _addFC: declare([_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin], {
@@ -30,7 +29,6 @@ define(["dojo/_base/declare", "dijit/_WidgetBase", 'dijit/_TemplatedMixin', 'dij
                 },
                 postCreate: function() {
                     this.inherited(arguments);
-                    //console.log(this);
                     this.dialogNode.show();
                     on(this.dialogNode, "hide",lang.hitch(this, function(){
                         //when we hide the dialog we want to destroy this object

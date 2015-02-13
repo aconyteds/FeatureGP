@@ -4876,8 +4876,7 @@ function(d, h, l, f, a, b, c, q, k, n, v, m, r, x, w, u, e, t, B, F, C, D, addFC
                 e = u.createResultRenderer(a, b, "widget");
                 //HERE IS WHERE WE ADD IN THE BUTTON!!!!
                 //We want to attach it to e.domNode as the Last item, should be an "a" with a click event to save to Portal
-                console.log("POSSIBLE VALUES:", this, a, b);
-                new addFC({target:e.domNode, results:b, map:this.map, portalUrl:this.appConfig.portalUrl, renderer:a.renderer||null});
+                new addFC({target:e.domNode, results:b, map:this.map, portalUrl:this.appConfig.portalUrl});
             }
             catch (h) {
                 console.error(h), e = u.createResultRenderer("error",
