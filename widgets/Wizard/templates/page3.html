@@ -1,0 +1,16 @@
+<div>
+    <p>Running Multiple geostatistical models...</p>
+    <p>The map content will be Updated when all models are complete.</p>
+    <div class="ButtonContainer">
+        <div class="exit" data-dojo-type="dijit/form/Button" data-dojo-attach-event="onClick:_exit">Exit</div>
+    </div>
+    <div data-dojo-type="dijit/form/Form">
+        <script type="dojo/method">
+            require(["dojo/topic"], function(topic){
+                setTimeout(function() {
+                    topic.publish("wizard/Next");
+                }, 5000);
+            });
+        </script>
+    </div>
+</div>

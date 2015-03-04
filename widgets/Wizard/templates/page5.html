@@ -1,0 +1,16 @@
+<div>
+    <p>Running remaining geostatistical models...</p>
+    <p>The Next button will be highlighted when all models are complete.</p>
+    <div class="ButtonContainer">
+        <div class="exit" data-dojo-type="dijit/form/Button" data-dojo-attach-event="onClick:_exit">Exit</div>
+        <div class="next" data-dojo-type="dijit/form/Button" data-dojo-attach-point="nextButton" disabled="true" data-dojo-attach-event="onClick:_next" id="${id}Next">Next
+        <script type="dojo/method">
+            setTimeout(function() {
+                require(["dijit/registry"], function(registry){
+                    registry.byId("${id}Next").set("disabled", false);
+                });
+            }, 5000);
+        </script></div>
+        
+    </div>
+</div>

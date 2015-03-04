@@ -1,0 +1,38 @@
+.jimu-widget-wizard{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: "Open Sans", Halvetica, Arial;
+    font-size: 14px;
+    font-style: normal;
+    .wizard_Title{
+        margin-top:0;
+        font-weight:bold;
+        text-decoration:underline;
+        text-align:center;
+        display:block;
+    }
+    .wizard_Subtitle{
+        text-align:center;
+        display:block;
+        margin-top:0;
+        font-weight:normal;
+    }
+    .ButtonContainer{
+        position:absolute;
+        bottom:10px;
+        width:100%;
+        .next{
+            float:right;
+            margin-right:10%;
+            .dijitButtonText:after{
+                content:"->";
+                font-weight:bold;
+            }
+        }
+        .exit{
+            float:left;
+            margin-left:10%;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+<div>
+    <h1 class="wizard_Title">Welcome to the Geostatistical Tool Wizard</h1>
+    <h2 class="wizard_Subtitle" >Click here to see Tool Overview and description of inputs required below</h2>
+    <form data-dojo-type="dijit/form/Form" class="wizardContent" enctype="multipart/form-data" method="" action="">
+        <table class="formContainer">
+            <tr>
+                <td>
+                    Directory where input files are stored:
+                </td>
+                <td>
+                    <input name="formInput" data-dojo-type="dojox/form/Uploader" data-dojo-props="showInput:'before'" type="file" label="Browse"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Directory where outputs will be stored:
+                </td>
+                <td>
+                    <input name="formOutput" data-dojo-type="dojox/form/Uploader" data-dojo-props="showInput:'before'" type="folder" label="Browse"></input>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="studyArea">Choose type of study area:</label></td>
+                <td >
+                    <select name="studyArea" data-dojo-type="dijit/form/Select" style="float:right;">
+                        <option value="single" selected="selected">Single</option>
+                        <option value="multiple">Multiple</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td ><label for="stdDeviation">Choose Number of Standard Deviations:</label></td>
+                <td >
+                    <select name="stdDeviation" data-dojo-type="dijit/form/Select" style="float:right;">
+                        <option value="1" selected="selected">1 Standard Deviation</option>
+                        <option value="2">2 Standard Deviations</option>
+                        <option value="3">3 Standard Deviations</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div class="ButtonContainer">
+        <div class="exit" data-dojo-type="dijit/form/Button" data-dojo-attach-event="onClick:_exit">Exit</div>
+        <div class="next" data-dojo-type="dijit/form/Button" data-dojo-attach-event="onClick:_next">Next</div>
+    </div>
+</div>

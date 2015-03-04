@@ -1,0 +1,17 @@
+<div>
+    <p>Your final results are shown in the map and tables to the right.</p>
+    <p>Choose the results you would like to save:</p>
+    <div data-dojo-attach-point="saveDiv">
+        
+    </div>
+    <p>Store in:</p>
+    <div data-dojo-attach-point="userFolders"></div>
+    <div class="ButtonContainer"> 
+        <div class="exit" data-dojo-type="dijit/form/Button" data-dojo-attach-event="onClick:_exit">Exit</div>
+        <div class="next" data-dojo-type="dijit/form/Button" >Save and Finish
+            <script type="dojo/method" data-dojo-event="onClick">
+                alert("Output Saved");
+            </script>
+        </div>
+    </div>
+</div>

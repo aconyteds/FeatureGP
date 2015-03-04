@@ -1,0 +1,12 @@
+{
+  "name": "Wizard",
+  "2D": true,
+  "3D": true,
+  "platform": "HTML",
+  "version": "1.1",
+  "wabVersion": "1.1",
+  "author": "Esri DC Regional Office",
+  "description": "",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0"
+}
